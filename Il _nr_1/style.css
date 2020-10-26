@@ -40,7 +40,7 @@ html, body {
 .mid-text p {
   color: #088155;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 18px;
   margin-bottom: 0;
 }
@@ -518,5 +518,10 @@ html, body {
   #footer .newsletter .btn {
     margin-top: 5px;
     margin-left: 0px;
+  }
+
+  #footer .contacts {
+    margin-left: 0px;
+    justify-content: flex-start !important;
   }
 }
