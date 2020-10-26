@@ -156,7 +156,6 @@ html, body {
   z-index: 10;
 }
 
-
 #upper-container .container-fluid .container-left input {
   height: 45px;
   width: 300px;
@@ -173,7 +172,6 @@ html, body {
   width: 22px;
   z-index: 10;
 }
-
 
 #upper-container .container-fluid .container-left select {
   appearance: none;
@@ -493,6 +491,11 @@ html, body {
     margin-left: 260px;
   }
   
+  #upper-container .container-fluid .container-left select {
+    width: 300px;
+    padding: 0 50px;
+  }
+  
   #upper-container .container-fluid .container-left input {
     width: 300px;
     padding: 0 50px;
@@ -502,10 +505,6 @@ html, body {
     margin-left: 16px;
   }
 
-  #upper-container .container-fluid .container-left select {
-    width: 300px;
-    padding: 0 50px;
-  }
 
   .mid-text {
     margin-top: 30px !important;

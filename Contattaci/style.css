@@ -198,22 +198,22 @@ html, body {
   font-family: 'Open-Sans', sans-serif;
 }
 
-#phone-email {
+#contacts-container .phone-email {
   margin-left: 175px;
 }
 
-#phone-email p {
+#contacts-container .phone-email p {
   font-size: 18px;
   font-weight: 600;
 }
 
-#phone-email span, #phone-email a {
+#contacts-container .phone-email span, #contacts-container .phone-email a {
   font-family: 'Open-Sans', sans-serif;
   font-size: 16px;
   color: #646464;
 }
 
-#phone-email a i {
+#contacts-container .phone-email a i {
   font-family: 'Open-Sans', sans-serif;
   font-size: 16px;
   color: #F1931F;
@@ -319,6 +319,10 @@ html, body {
     margin-top: -100px;
   }
 
+  #contacts-container .phone-email {
+    margin-left: 155px;
+  }
+
 }
 
 @media (max-width: 767.98px) {
@@ -331,6 +335,10 @@ html, body {
   #upper-container .container-fluid .container-left .lines {
     height: 180px;
     margin-left: 100px;
+  }
+
+  #contacts-container .phone-email {
+    margin-left: 115px;
   }
 }
 
@@ -395,22 +403,22 @@ html, body {
     margin-left: 35px;
   }
 
-  #phone-email {
+  #contacts-container .phone-email {
     margin-left: 30px;
   }
   
-  #phone-email p {
+  #contacts-container .phone-email p {
     font-size: 18px;
     font-weight: 600;
   }
   
-  #phone-email span, a {
+  #contacts-container .phone-email span, a {
     font-family: 'Open-Sans', sans-serif;
     font-size: 16px;
     color: #646464;
   }
   
-  #phone-email a i {
+  #contacts-container .phone-email a i {
     font-family: 'Open-Sans', sans-serif;
     font-size: 16px;
     color: #F1931F;

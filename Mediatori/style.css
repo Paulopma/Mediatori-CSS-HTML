@@ -96,7 +96,7 @@ html, body {
   background-color: #088155;
 }
 
-#upper-container img {
+#upper-container>img {
   position: absolute;
   right: 0;
   height: 584px;
@@ -140,27 +140,22 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#upper-container .container-fluid .container-left input {
-  height: 51px;
-  width: 430px;
+#upper-container .container-fluid .container-left select {
+  appearance: none;
+  height: 45px;
+  width: 300px;
+  margin-right: 20px;
+  margin-left: -5px;
   border: none;
   border-radius: 100px;
-  padding: 0 30px;
+  padding: 0 25px;
+  font-family: 'Open-Sans', sans-serif;
+  color: #898989;
 }
 
-#upper-container .container-fluid .container-left .btn {
-  height: 51px;
-  width: 106px;
-  margin-left: -55px;
-  font-size: 14px;
-  background-color: #F1931F;
-  color: white;
-  border-radius: 100px;
-  transition: 0.2;
-}
-
-#upper-container .container-fluid .container-left .btn:hover {
-  background-color: #d8831b;
+#upper-container .container-fluid .container-left .dropdown-icon {
+  position: absolute;
+  margin-left: 255px
 }
 
 .mid-text {
@@ -449,7 +444,7 @@ html, body {
   #upper-container .container-fluid .container-left .lines {
     margin-left: -15px;
     width: 10px;
-    height: 320px;
+    height: 290px;
     margin-right: 8px;
   }
 
@@ -466,22 +461,6 @@ html, body {
     text-align: justify;
     max-width: 280px;
     font-size: 16px;
-  }
-  
-  #upper-container .container-fluid .container-left input {
-    width: 300px;
-    padding: 0 18px;
-  }
-
-  #upper-container .container-fluid .container-left .input-button {
-    align-items: center;
-    margin: 0;
-  }
-  
-  #upper-container .container-fluid .container-left .btn {
-    margin-top: 8px;
-    width: 150px;
-    margin-left: 0px;
   }
 
   .mid-text {
