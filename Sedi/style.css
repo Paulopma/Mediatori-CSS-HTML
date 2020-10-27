@@ -102,7 +102,7 @@ html, body {
   color: #086B47;
 }
 
-#header .btn {
+#header .btn, #small-nav .btn {
   height: 45px;
   width: 177px;
   font-size: 14px;
@@ -112,12 +112,49 @@ html, body {
   transition: 0.2;
 }
 
-#header .btn:hover {
+#header .btn:hover, #small-nav .btn {
   background-color: #d8831b;
   color: white;
 }
 
 /*NAV------------------------------------*/
+
+#small-nav {
+  position: absolute;
+  min-height: 120vh;
+  width: 100vw;
+  padding-left: 40px;
+  background-color: #086B47;
+  z-index: 15;
+}
+
+#small-nav .item {
+  color: white;
+}
+
+#small-nav .item .active {
+  color: #F1931F;
+}
+
+#small-nav .open-items .main-items {
+  margin: 0;
+  font-size: 12px;
+  color: #F1931F;
+  text-transform: uppercase;
+}
+
+#small-nav .open-items .sub-items {
+  margin: 0;
+  max-width: 150px;
+  color: white;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 11px;
+}
+
+#small-nav .line {
+  width: 245px;
+  border-bottom: 1px solid white;
+}
 
 #nav {
   background-color: #086B47;
@@ -431,10 +468,6 @@ html, body {
   }
 
   /*NAV---------------*/
-
-  #nav {
-    margin-top: 51px;
-  }
 
   #nav .row .nav-link {
     font-size: 15px;
