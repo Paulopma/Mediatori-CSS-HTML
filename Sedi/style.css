@@ -50,14 +50,43 @@ html, body {
 /*header-------------------------------------*/
 
 #header {
-  padding: 9px;
+  height: 82px;
   background-color: white;
   z-index: 10;
 }
 
+#header .container {
+  width: 1200px;
+  margin-top: 10px;
+}
+
+#header .navbar-toggler {
+  border: none;
+}
+
+#header .expand-icon {
+  fill: #088155;
+}
+
+#header .contact-icons {
+  fill: #C4C4C4;
+}
+
+#header .contact-icons a {
+  font-size: 14px;
+  color: #d8831b;
+}
+
+#header .active, #header .icons:hover {
+  fill: #F1931F;
+}
+
+#header .collapsed-menu {
+  height: 40px;
+  width: 200px;
+}
+
 #header .nav-link {
-  margin-left: 20px;
-  margin-top: 2px;
   color: #848484;
 }
 
@@ -329,6 +358,10 @@ html, body {
 }
 
 @media (max-width: 991.98px) {
+  #upper-container {
+    margin-top: 82px;
+  }
+
   #upper-container .container-fluid .container-left .lines {
     margin-left: 50px;
   }
@@ -376,6 +409,18 @@ html, body {
 }
 
 @media (max-width: 575.98px) {
+  #header {
+    height: 51px;
+  }
+
+  #header .container {
+    margin-top: -2px;
+  }
+
+  #header .navbar-brand img {
+    width: 40px;
+  }
+
   #header .navbar-brand :first-child{
     height: 32px;
   }
@@ -387,12 +432,20 @@ html, body {
 
   /*NAV---------------*/
 
+  #nav {
+    margin-top: 51px;
+  }
+
   #nav .row .nav-link {
     font-size: 15px;
     padding: 8px;
   }
 
   /*PAGE-----------------*/
+
+  #upper-container {
+    margin-top: 51px;
+  }
 
   #upper-container .container-fluid {
     justify-content: center;
