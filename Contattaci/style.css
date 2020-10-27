@@ -51,6 +51,7 @@ html, body {
 #header {
   padding: 9px;
   background-color: white;
+  z-index: 10;
 }
 
 #header .nav-link {
@@ -89,6 +90,7 @@ html, body {
 /*NAV------------------------------------*/
 
 #nav {
+  margin-top: 82px;
   background-color: #086B47;
 }
 

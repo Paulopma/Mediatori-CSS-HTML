@@ -33,6 +33,7 @@ html, body {
 #header {
   padding: 9px;
   background-color: white;
+  z-index: 10;
 }
 
 #header .nav-link {
@@ -72,6 +73,7 @@ html, body {
 
 #nav {
   background-color: #086B47;
+  margin-top: 82px;
 }
 
 #nav .row {
