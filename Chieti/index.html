@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+  <title>Mediatori</title>
+</head>
+
+<body>
+  
+  <!--HEADER--> 
+
+  <header id="header" class="container-fluid position-fixed">
+    <nav class="navbar navbar-expand-lg container-fluid">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand d-flex">
+          <img src="Images/logo.svg" alt="logo">
+          <img class="ml-2 d-none d-lg-block" src="Images/logo-101mediatori.svg" alt="logo-101">
+        </a>
+
+        <div class="d-lg-none">
+          <div class="collapsed-menu d-flex align-items-center justify-content-end">
+
+            <div class="contact-icons d-flex">
+              <svg class="user-icon contact-icons icons mr-4" 
+                data-toggle="collapse" 
+                href="#user-collapse" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="user-collapse" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.395 15.36C16.605 14.285 12.61 14.73 12 13.5C10.79 11.06 11.285 11.515 12.07 10.9101C12.81 10.3451 12.775 8.85006 13.23 8.32007C13.69 7.78007 13.9 6.24008 13.73 5.65508C13.5 4.88509 13.15 5.30509 13.095 4.72009C12.98 3.4651 13.295 2.4351 12.59 1.82511C11.91 1.23511 11.055 0.0201246 9.66499 0.0001247C9.17999 -0.00487527 8.63 0.140124 8 0.500121C5 0.180123 5.02 3.4651 4.905 4.72009C4.85 5.30009 4.5 4.88009 4.27 5.65508C4.095 6.23508 4.31 7.78007 4.77 8.32007C5.225 8.85006 5.18999 10.3451 5.92999 10.9101C6.71999 11.515 7.215 11.06 6 13.5C5.39 14.73 1.39 14.28 0.604996 15.36C-4.29153e-06 16.18 0 18 0 18H9H18C18 18 18 16.18 17.395 15.36Z"/>
+              </svg>
+              <a class="collapse ml-n3 mr-2" id="user-collapse">Mediatore</a>
+              
+              <svg class="location-icon contact-icons icons mr-4"  
+                data-toggle="collapse" 
+                href="#location-collapse" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="location-collapse" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9495 2.187C9.21559 -0.729 4.78441 -0.729 2.05046 2.187C-0.683487 5.103 -0.683487 9.8325 2.05046 12.7485L7.00219 18L11.9495 12.7485C14.6835 9.8325 14.6835 5.103 11.9495 2.187ZM7.00219 9.45C5.79488 9.45 4.81503 8.442 4.81503 7.2C4.81503 5.958 5.79488 4.95 7.00219 4.95C8.2095 4.95 9.18935 5.958 9.18935 7.2C9.18935 8.442 8.2095 9.45 7.00219 9.45Z"/>
+              </svg>
+              <a class="collapse ml-n3 mr-2" id="location-collapse">Sedi</a>
+
+              <a href="#">
+                <svg class="phone-icon contact-icons icons mr-3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.8446 11.9783C16.7346 11.9533 16.6196 11.9333 16.4995 11.9333C16.4945 11.9333 16.4895 11.9333 16.4845 11.9333C14.7791 11.7183 13.1886 11.1531 11.7832 10.3029L9.60265 12.5335C7.9922 11.4482 6.59682 9.99778 5.51152 8.49737H5.50152H5.50652L7.68712 6.26674C6.83688 4.86135 6.27173 3.24091 6.05667 1.54044C6.05667 1.53543 6.05667 1.52042 6.05667 1.51542C6.05667 1.39539 6.04167 1.27536 6.01166 1.16533C5.85661 0.500147 5.26145 0 4.55125 0H2.95081H1.50542C0.685189 0 0.0250069 0.655183 0.00500137 1.47041C0.00500137 1.48041 0 1.49542 0 1.50542C0 1.59045 0.0100027 1.67547 0.0250069 1.7605C0.340094 5.04141 1.52542 8.05224 3.34092 10.5729C4.47623 12.1434 5.85662 13.5237 7.42705 14.6591C9.95274 16.4796 12.9636 17.6599 16.2345 17.975C16.3195 17.99 16.4045 18 16.4945 18C16.5096 18 16.5196 17.995 16.5296 17.995C17.3448 17.975 18 17.3148 18 16.4946V15.0492V13.4437C18.005 12.7285 17.5098 12.1334 16.8446 11.9783Z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="false">
+              <svg class="expand-icon icons" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 0H12V2.84211H23V0Z"/>
+                <path d="M23 7.57898H0V10.4211H23V7.57898Z"/>
+                <path d="M23 15.1578H5V17.9999H23V15.1578Z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+          <div class="expanded-contacts d-flex align-items-center">
+            <a class="nav-link" href="#">Mediatori</a>
+            <a class="nav-link" href="#">Sedi</a>
+            <a class="nav-link" href="#">Contatti</a>
+            <a class="nav-link telephone" href="#">Tel 800.910676</a>
+            <button type="button" class="btn nav-link ml-3">Deposita Aderisci</button>
+          </div>
+        </div>
+        
+      </div>
+
+    </nav>
+  </header>
+  
+  <!--NAV-->
+
+  <div class="collapse" id="navbarResponsive">
+    <div id="small-nav">
+      <div class="navbar-toggler p-3 mb-3 container-fluid d-flex justify-content-end" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="true">
+        <img src="Images/close-icon.svg" alt="close-icon">
+      </div>
+      <div class="nav-items d-flex flex-column">
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#mediazione-collapse" 
+          aria-expanded="true" 
+          aria-controls="mediazione-collapse"
+        >
+          COSA È LA MEDIAZIONE
+        </a>
+        <div class="collapse show" id="mediazone-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#quanto-costa-collapse" 
+          aria-expanded="true" 
+          aria-controls="quanto-costa-collapse"
+        >
+          QUANTO COSTA
+        </a>
+        <div class="collapse show" id="quanto-costa-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+            <a class="mb-4" href="">
+              <p class="main-items" href="#">PREVENTIVO ONLINE</p>
+              <p class="sub-items">Seleziona la sede ed il valore della tua pratica</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#">come e quando si paga</p>
+              <p class="sub-items">Un motivo in più per affidarci le tue </p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">Effetua un pagamento</p>
+              <p class="sub-items">6 facili modalità di pagamento</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">tabella</p>
+              <p class="sub-items">I nostri costi</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">promozioni</p>
+              <p class="sub-items">Un motivo in più per affidarci le tue</p>
+            </a>
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#approfondisci-collapse" 
+          aria-expanded="true" 
+          aria-controls="approfondisci-collapse"
+        >
+          APPROFONDISCI
+        </a>
+        <div class="collapse show" id="approfondisci-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#avvocato-collapse" 
+          aria-expanded="true" 
+          aria-controls="avvocato-collapse"
+        >
+          SEI UN AVVOCATO
+        </a>
+        <div class="collapse show" id="avvocato-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <div class="line py-2"></div>
+
+        <button type="button" class="btn mt-5 mb-5">Deposita Aderisci</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="d-none d-lg-block">
+    <nav id="nav" class="container-fluid d-flex justify-content-center">
+      <div class="row">
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link" href="#">COSA È LA MEDIAZIONE</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link" href="#">QUANTO COSTA</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link" href="#">APPROFONDISCI</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link" href="#">SEI UN AVVOCATO</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--PAGE-->
+
+  <main>
+    <section id="upper-container">
+      <div class="map text-right d-none d-xl-block">
+        <img src="Images/map.png" alt="header-image">
+        <span>Click on the map to enhance</span>
+      </div>
+      <div class="container-fluid d-flex align-items-center">
+        <div class="container-left d-flex">
+          <div class="lines"></div>
+          <div class="text d-flex flex-column justify-content-between">
+            <p class="mb-n2">Sedi: Chieti</p>
+            <h1 class="mb-n2">Organismo di Mediazione di Chieti</h1>
+            <p>
+              Sede di Chieti accreditata in forza di accordo ex art. 7 DM 180/2010
+            </p>
+            <div class="contacts-container d-flex mb-3">
+              <div class="icons-col mr-4 py-2 d-flex flex-column justify-content-between">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.8446 11.9783C16.7346 11.9533 16.6196 11.9333 16.4995 11.9333C16.4945 11.9333 16.4895 11.9333 16.4845 11.9333C14.7791 11.7183 13.1886 11.1531 11.7832 10.3029L9.60265 12.5335C7.9922 11.4482 6.59682 9.99778 5.51152 8.49737H5.50152H5.50652L7.68712 6.26674C6.83688 4.86135 6.27173 3.24091 6.05667 1.54044C6.05667 1.53543 6.05667 1.52042 6.05667 1.51542C6.05667 1.39539 6.04167 1.27536 6.01166 1.16533C5.85661 0.500147 5.26145 0 4.55125 0H2.95081H1.50542C0.685189 0 0.0250069 0.655183 0.00500137 1.47041C0.00500137 1.48041 0 1.49542 0 1.50542C0 1.59045 0.0100027 1.67547 0.0250069 1.7605C0.340094 5.04141 1.52542 8.05224 3.34092 10.5729C4.47623 12.1434 5.85662 13.5237 7.42705 14.6591C9.95274 16.4796 12.9636 17.6599 16.2345 17.975C16.3195 17.99 16.4045 18 16.4945 18C16.5096 18 16.5196 17.995 16.5296 17.995C17.3448 17.975 18 17.3148 18 16.4946V15.0492V13.4437C18.005 12.7285 17.5098 12.1334 16.8446 11.9783Z"/>
+                </svg>
+                <svg class="mb-1" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 0.4C16 0.18 15.82 0 15.6 0H0.4C0.18 0 0 0.18 0 0.4V1.504L8 5.504L16 1.504V0.4Z"/>
+                  <path d="M16 3.29602L8 7.29602L0 3.29602V10.8C0 11.02 0.18 11.2 0.4 11.2H15.6C15.82 11.2 16 11.02 16 10.8V3.29602Z"/>
+                </svg>
+                <svg class="mb-3" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.9495 2.187C9.21559 -0.729 4.78441 -0.729 2.05046 2.187C-0.683487 5.103 -0.683487 9.8325 2.05046 12.7485L7.00219 18L11.9495 12.7485C14.6835 9.8325 14.6835 5.103 11.9495 2.187ZM7.00219 9.45C5.79488 9.45 4.81503 8.442 4.81503 7.2C4.81503 5.958 5.79488 4.95 7.00219 4.95C8.2095 4.95 9.18935 5.958 9.18935 7.2C9.18935 8.442 8.2095 9.45 7.00219 9.45Z"/>
+                </svg>
+              </div>
+              <div class="media-col mr-4 d-flex flex-column justify-content-between">
+                <div class="d-flex flex-column">
+                  <span class="text-nowrap">Num. verde:</span>
+                  <span>Fax:</span>
+                </div>
+                <div class="d-flex flex-column">
+                  <span>E-mail:</span>
+                  <span>Pec:</span>
+                </div>
+                <span class="mb-4">Indirizzo:</span>
+              </div>
+              <div class="numbers-col ml-n2 d-flex flex-column justify-content-between">
+                <div class="mb-4 m-sm-0 p-sm-0 d-flex flex-column">
+                  <span>800910676</span>
+                  <span>800134913</span>
+                </div>
+                <div class="mb-4 pb-2 m-sm-0 p-sm-0 d-flex flex-column">
+                  <span>info@101mediatori.it</span>
+                  <span>info@pec.101mediatori.it</span>
+                </div>
+                <span>Via Silvio e Bertrando Spaventa 16/B, 66100 Chieti (CH)</span>
+              </div>
+            </div>
+            <button type="button" class="btn">Deposita istanza qui</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="central-texts"">
+      <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
+        <div></div>
+        <p class="mb-0">Scopri come depositare e ricevere supporto nella Mediazione Civile a Chieti</p>
+      </div>
+  
+      <p class="texts">101Mediatori, Organismo di Mediazione, offre il servizio di 
+        <strong>gestione della procedura di mediazione civile</strong> 
+        e commerciale nella sede di Chieti accreditata in forza di accordo ex art. 7 DM 180/2010. Grazie all'intervento di un mediatore imparziale e competente si potranno risolvere i contrasti tra le parti in maniera celere ed economica all'interno della sede dell'Organismo di mediazione di Chieti. Il mediatore agevola il dialogo tra le parti in lite quindi non è un giudice o un arbitro, non giudica né emette una sentenza ma, essendo un esperto conoscitore delle dinamiche di gestione dei conflitti crea un tavolo di lavoro sereno e produttivo che permette di individuare ed analizzare le varie strade per superare il conflitto in modo che entrambe le parti ne escano avvantaggiate. Anche nell'Organismo di mediazione di Chieti, al termine della mediazione civile non vi saranno ne vinti ne vincitori ma solo delle parti che hanno deciso di affrontare il conflitto, gestirlo e infine dominarlo e guidarlo per condurlo ad un accordo reciprocamente soddisfacente.<br><br>
+        <strong>Per informazioni sul sull'Organismo di Mediazione di Chieti contattare il numero verde o inviare una richiesta email.</strong> 
+      </p>
+    </div>
+
+    <div id="central-texts"">
+      <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
+        <div></div>
+        <p class="mb-0">Organismo di Mediazione Chieti</p>
+      </div>
+  
+      <p class="texts"><strong>Mediatori:</strong> nella sede dell'Organismo di Mediazione Chieti, trovi mediatori civili professionisti con anni di esperienza, regolarmente iscritti nell’albo dei mediatori civili del ministero della giustizia, e formati nel rispetto degli elevati standard professionali richiesti.<br><br>
+        Grazie alla frequenza periodica di corsi di formazione ed aggiornamento, i mediatori garantiscono sempre più elevate percentuali di successo.<br><br> 
+        L'Organismo di Mediazione di Chieti convenzionato ex art 7 con 101Mediatori svolge il servizio di Mediazione civile nell’ambito della competenza territoriale del Tribunale di Chieti 
+      </p>
+    </div>
+
+    <div id="central-texts"">
+      <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
+        <div></div>
+        <p class="mb-0">La Mediazione Civile</p>
+      </div>
+  
+      <p class="texts pb-3 pb-xl-5">Il 21 marzo 2011 è entrata in vigore la riforma che introduce anche in Italia il sistema della Mediazione Civile.<br><br>
+        <strong>Obiettivo:</strong> offrire al cittadino uno strumento semplice e veloce per risolvere le controversie con costi contenuti e certi.<br><br>
+        
+        La mediazione è l’attività professionale finalizzata ad assistere due o più soggetti nella ricerca di un accordo amichevole.<br><br>
+        
+        In pratica, la mediazione civile è tutto questo: due o più parti, assistite dai rispettivi avvocati, si incontrano presso un Organismo di Mediazione accreditato dal Ministero della Giustizia per cercare un accordo attraverso il fondamentale intervento del Mediatore Professionista, accuratamente formato e preparato per aiutare le parti nella ricerca di una soluzione conveniente per entrambe.<br><br> 
+
+        La mediazione costituisce la migliore e unica alternativa alle lunghe e costosissime cause in Tribunale, dove spesso, dopo anni di udienze, tutti si sentono sconfitti e nessuno vincitore.
+      </p>
+    </div>
+
+    
+
+    <!--FOOTER-->
+
+    
+    
+    <section id="footer" class="d-flex flex-column justify-content-between">
+      <div id="map-footer" class="d-xl-none mt-5">
+        <div class="mid-text py-5 mb-0 d-flex align-items-center">
+          <div></div>
+          <p class="mb-0">Where to find us</p>
+        </div>
+        <img class="map-image" src="Images/map.png" alt="map-image">
+      </div>
+
+      <div class="row contacts align-items-start justify-content-center ">
+        
+        <div class="mx-4 my-2 phone-adress">
+          <p class="m-0">Tel 800.910676</p>
+          <span>Siamo a tua disposizione dal lun al ven; 9-13 e 15-19</span>
+        </div>
+
+        <div class="mx-4 my-2 social">
+          <p class="mt-0">Resta Connesso</p>
+          <div class="icons d-flex justify-content-between align-items-center">
+            <a href="#">
+              <img class="facebook-icon"src="Images/facebookIcon.svg" alt="facebook-icon">
+            </a>
+            <a href="#">
+              <img class="linkedin-icon" src="Images/linkedin-icon.svg" alt="linkedin-icon">
+            </a>
+            <a href="#">
+              <img class="youtube-icon" src="Images/youtube-icon.svg" alt="youtube-icon">
+            </a>
+          </div>   
+        </div>
+
+      <div class="mx-4 my-2 newsletter">
+        <p class="mt-0">Inscriviti alla newsletter</p>
+        <div class="flex-column flex-sm-row input-button d-flex">
+          <input placeholder="Inserisci il tuo indirizzo email" type="text">
+          <button type="button" class="btn">Cerca</button>
+        </div>
+      </div>
+  
+      </div>
+      <p class="register my-3 mx-4">
+        © 2011-2020 - 101Mediatori.it | Gruppo101 srl, iscritto al nr 
+        294 degli Organismi di mediazione e al nr 374 degli Enti di formazione | 
+        P.IVA 03952990756
+      </p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+</body>
