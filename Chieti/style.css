@@ -27,9 +27,9 @@ html, body {
 }
 
 .mid-text {
-  max-width: 480px;
+  max-width: 530px;
   padding: 70px 0;
-  margin-left: 171px;
+  margin-left: 272px;
 }
 
 .mid-text div {
@@ -183,13 +183,20 @@ html, body {
   background-color: #088155;
 }
 
-#upper-container img {
+#upper-container .map {
   position: absolute;
   top: 200px;
   right: 223px;
   width: 445px;
   object-fit: cover;
-  border-bottom-left-radius: 10px;
+  filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.15));
+  border-radius: 10px;
+}
+
+#upper-container .map span {
+  color: white;
+  font-size: 14px;
+  font-family: 'Open-Sans', sans-serif;
 }
 
 #upper-container .container-fluid .container-left {
@@ -253,6 +260,15 @@ html, body {
 
 #upper-container .container-fluid .container-left .btn:hover {
   background-color: #d8831b;
+}
+
+#central-texts .texts {
+  margin-left: 310px;
+  max-width: 800px;
+  color: #646464;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 /*FOOTER-------------------------------*/
@@ -328,7 +344,7 @@ html, body {
 /*media queries-----------------------------*/
 
 @media (max-width: 1300.98px) {
-  #upper-container img {
+  #upper-container .map {
     right: 150px;
   }
 }
@@ -343,6 +359,10 @@ html, body {
     margin-top: -60px;
     padding: 60px 0;
     margin-left: 100px;
+  }
+
+  #central-texts .texts {
+    margin-left: 140px;
   }
 
   .map-image {
@@ -370,9 +390,14 @@ html, body {
   /*PAGE-----------------*/
 
   .mid-text {
+    margin-bottom: 0;
     margin-top: -60px;
-    padding: 60px 0;
-    margin-left: 100px;
+    margin-left: 70px;
+  }
+
+  #central-texts .texts {
+    margin-left: 0;
+    padding: 0 50px;
   }
 
   #map-footer .map-image {
@@ -387,7 +412,7 @@ html, body {
   .mid-text {
     padding: 40px 0;
     margin-top: -60px;
-    margin-left: 100px;
+    margin-left: 40px;
   }
 }
 
@@ -428,7 +453,7 @@ html, body {
 
   #upper-container .container-fluid {
     justify-content: center;
-    height: 400px;
+    height: 600px;
   }
 
   #upper-container .container-fluid .container-left .lines {
@@ -452,27 +477,27 @@ html, body {
     max-width: 280px;
     font-size: 16px;
   }
-  
-  #upper-container .container-fluid .container-left input {
-    width: 300px;
-    padding: 0 18px;
-  }
 
-  #upper-container .container-fluid .container-left .input-button {
-    align-items: center;
-    margin: 0;
+  #upper-container .container-fluid .container-left .text {
+    height: 550px;
   }
+  
   
   #upper-container .container-fluid .container-left .btn {
     margin-top: 8px;
-    width: 150px;
     margin-left: 0px;
   }
 
   .mid-text {
     margin-top: -60px;
     padding: 40px 0;
-    margin-left: 30px;
+    margin-left: 20px;
+  }
+
+  #map-footer .map-image {
+    margin-top: -2 auto;
+    border-radius: 0;
+    width: 102vw;
   }
 
   /*FOOTER---------------------*/
