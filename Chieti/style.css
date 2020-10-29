@@ -176,16 +176,68 @@ html, body {
   border-bottom: 4px solid #F1931F;
 }
 
+#nav-collapse .collapse {
+  height: 217px;
+}
+
+#nav-collapse p {
+  margin: 0;
+}
+
+#nav-collapse .question {
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #646464;
+}
+
+#nav-collapse .question span {
+  color: #F1931F;
+}
+
+#nav-collapse .line {
+  width: 690px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+#nav-collapse .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  grid-template-rows: repeat(2, 75px);
+}
+
+#nav-collapse .menu .mid-col {
+  justify-self: center;
+}
+
+#nav-collapse .menu .end-col {
+  justify-self: end;
+}
+
+#nav-collapse .menu .item {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F1931F;
+}
+
+#nav-collapse .menu .sub-item {
+  max-width: 150px;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 11px;
+  color: #848484;
+}
+
 /*PAGE----------------------------*/
 
-#upper-container .container-fluid {
-  height: 597px;
+#upper-container {
   background-color: #088155;
+  height: 597px;
 }
 
 #upper-container .map {
-  position: absolute;
-  top: 200px;
+  position: relative;
+  top: 71px;
   right: 223px;
   width: 445px;
   object-fit: cover;
