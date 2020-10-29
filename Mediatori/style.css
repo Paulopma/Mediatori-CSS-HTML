@@ -472,41 +472,51 @@ html, body {
   }
 
   .grid-card {
-    width: 97vw;
+    height: 250px;
+    border-radius: 0;
+    width: 100vw;
   }
   
   .grid-card .card-image img {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50px;
     height: 100px;
     width: 100px;
   }
   
   .grid-card .card-image .image-badge {
+    margin-left: 20px;
+    font-size: 12px;
     top:-30px;
     height: 30px;
-    width: 100px;
+    width: 80px;
+    border-bottom-right-radius: 10px;
   }
   
   .grid-card .card-info {
     display: flex !important;
-    justify-content: space-between !important;
+    justify-content: space-around !important;
   }
   
   .grid-card .card-info h3 {
     width: 65vw;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: -10px;
   }
   
   .grid-card .card-info .grade {
     margin-top: -10px;
   }
-
   
   .grid-card .card-info .about {
+    margin-top: 20px;
+    font-size: 12px;
     position: relative;
-    left: -100px;
+    left: -90px;
     min-height: 84px;
-    min-width: 90vw;
+    min-width: 85vw;
   }
   
   .grid-card .card-info .profile-link {
