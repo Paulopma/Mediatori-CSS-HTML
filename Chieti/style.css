@@ -2,6 +2,9 @@ html, body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
   background-color: #F9F9F9;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 /*general classes---------------------------*/
@@ -466,6 +469,38 @@ html, body {
     margin-top: -60px;
     margin-left: 40px;
   }
+
+  /*FOOTER-----------------*/
+
+  #footer {
+    height: 350px;
+  }
+
+  #footer .newsletter input {
+    height: 40px;
+  }
+
+  #footer .newsletter .btn {
+    width: 115px;
+    height: 40px;
+  }
+
+  #footer .contacts {
+    height: 400px;
+    margin: 40px 0 20px 0;
+  }
+
+  #footer .contacts .phone-adress p {
+    font-size: 20px;
+  }
+
+  #footer .contacts .phone-adress span {
+    font-size: 12px;
+  }
+
+  #footer .contacts .register {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -553,13 +588,39 @@ html, body {
 
   /*FOOTER---------------------*/
 
+  #footer {
+    margin-top: 70px;
+    height: 530px;
+  }
+
+  #footer .newsletter input {
+    height: 40px;
+  }
+
   #footer .newsletter .btn {
+    width: 115px;
+    height: 40px;
     margin-top: 5px;
     margin-left: 0px;
   }
 
   #footer .contacts {
-    margin-left: 0px;
-    justify-content: flex-start !important;
+    height: 400px;
+    margin: 30px 0 20px 0;
+
+    flex-direction: column;
+    justify-content: space-between !important;
+  }
+
+  #footer .contacts .phone-adress p {
+    font-size: 20px;
+  }
+
+  #footer .contacts .phone-adress span {
+    font-size: 12px;
+  }
+
+  #footer .contacts .register {
+    font-size: 14px;
   }
 }

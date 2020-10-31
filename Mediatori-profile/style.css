@@ -657,6 +657,7 @@ html, body {
   /*FOOTER---------------------*/
 
   #footer {
+    margin-top: 70px;
     height: 530px;
   }
 

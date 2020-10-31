@@ -435,6 +435,7 @@ html, body {
 /*FOOTER-------------------------------*/
 
 #footer {
+  margin-top: 151px;
   min-height: 254px;
   background-color: white;
 }
@@ -586,6 +587,38 @@ html, body {
   #upper-container .container-fluid .contacts-container .media-col {
     height: 277px;
   }
+
+   /*FOOTER--------------*/
+
+   #footer {
+    height: 350px;
+  }
+
+  #footer .newsletter input {
+    height: 40px;
+  }
+
+  #footer .newsletter .btn {
+    width: 115px;
+    height: 40px;
+  }
+
+  #footer .contacts {
+    height: 400px;
+    margin: 40px 0 20px 0;
+  }
+
+  #footer .contacts .phone-adress p {
+    font-size: 20px;
+  }
+
+  #footer .contacts .phone-adress span {
+    font-size: 12px;
+  }
+
+  #footer .contacts .register {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -621,11 +654,11 @@ html, body {
 
   #upper-container {
     margin-top: 51px;
+    height: 800px;
   }
 
   #upper-container .container-fluid {
     justify-content: center;
-    height: 800px;
   }
 
   #upper-container .container-fluid .container-left .lines {
@@ -782,13 +815,39 @@ html, body {
 
   /*FOOTER---------------------*/
 
+  #footer {
+    margin-top: 70px;
+    height: 530px;
+  }
+
+  #footer .newsletter input {
+    height: 40px;
+  }
+
   #footer .newsletter .btn {
+    width: 115px;
+    height: 40px;
     margin-top: 5px;
     margin-left: 0px;
   }
 
   #footer .contacts {
-    margin-left: 0px;
-    justify-content: flex-start !important;
+    height: 400px;
+    margin: 30px 0 20px 0;
+
+    flex-direction: column;
+    justify-content: space-between !important;
+  }
+
+  #footer .contacts .phone-adress p {
+    font-size: 20px;
+  }
+
+  #footer .contacts .phone-adress span {
+    font-size: 12px;
+  }
+
+  #footer .contacts .register {
+    font-size: 14px;
   }
 }
