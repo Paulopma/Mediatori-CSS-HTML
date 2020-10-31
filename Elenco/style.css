@@ -30,7 +30,8 @@ html, body {
 }
 
 .mid-text {
-  margin-left: 170px;
+  margin-top: 54px;
+  margin-bottom: 30px;
 }
 
 .mid-text div {
@@ -241,7 +242,7 @@ html, body {
 
 #upper-container .container-fluid .lines {
   margin-top: 70px;
-  margin-left: 223px;
+  margin-left: 123px;
   height: 274px;
   width: 35px;
   border-top: 1px solid white;
@@ -261,6 +262,7 @@ html, body {
 }
 
 #upper-container .container-fluid .container-left .text p:first-of-type {
+  max-width: 390px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -272,211 +274,73 @@ html, body {
   font-weight: 400;
 }
 
-#preventivo .preventivo-container {
-  margin-left: 50px;
-  margin-top: -50px;
-  padding: 50px;
+#upper-container img {
+  width: 523px;
+  height: 434px;
+  border-bottom-left-radius: 10px;
+}
+
+#months-container .months {
+  width: 1190px;
+  margin: 0 30px;
+}
+
+#months-container .cards {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  max-width: 385px;
+  height: 233px;
+  padding: 25px;
   background-color: white;
-  max-width: 892px;
-  min-height: 1044px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-#preventivo .preventivo-container label {
-  margin-bottom: 20px;
-  font-family: 'Open-Sans', sans-serif;
-  font-size: 16px;
-  color: #3D3D3D;
+#months-container .cards p {
+  margin: 0;
 }
 
-#preventivo .selects select {
-  margin-bottom: 40px;
-  padding: 0 15px;
-  appearance: none;
-  width: 229px;
-  height: 45px;
-  border: 1px solid #C4C4C4;
-  border-radius: 10px;
-  color: #848484;
-  font-family: 'Open-Sans', sans-serif;
+#months-container .cards:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-#preventivo .selects .valore-select select {
-  width: 331px;
-}
-
-#preventivo .selects .dropdown-icon {
-  position: relative;
-  margin-left: -35px
-}
-
-#preventivo .preventivo-container .radio-label {
-  white-space: nowrap;
-  margin-right: 105px;
-  font-family: 'Open-Sans', sans-serif;
+#months-container .cards .date {
+  font-weight: 600;
   font-size: 14px;
-  color: #3D3D3D;
+  color: #F1931F;
 }
 
-#preventivo .input-radios input {
-  margin-right: 5px;
-  width: 19px;
-  height: 19px;
-}
-
-#preventivo .preventivo-container .visualizza-radio .radio-label {
-  margin-right: 188px;
-}
-
-#preventivo .line {
-  max-width: 790px;
-  border-bottom: 2px solid #E6E6E6;
-}
-
-#preventivo .notice {
-  font-family: 'Open-Sans', sans-serif;
+#months-container .cards .title {
   font-size: 12px;
-  color: #848484;
-}
-
-#preventivo .notice-green {
-  color: #098155;
-  font-weight: 700;
-}
-
-#preventivo .notice-bottom {
-  max-width: 550px;
-} 
-
-#preventivo .costs-table {
-  max-width: 689px;
-  min-height: 262px;
-  background-color: #F9F9F9;
-  border-radius: 10px;
-}
-
-#preventivo .costs-table .title {
-  padding: 11px 60px;
-  background-color: #088155;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#preventivo .costs-table .title p {
-  margin: 0;
-  font-size: 14px;
-  text-align: right;
-  color: white;
-}
-
-#preventivo .costs-table .costs {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 520px 50px;
-  grid-template-rows: repeat(6, 31px);
-}
-
-#preventivo .costs-table .costs p {
-  font-family: 'Open-Sans', sans-serif;
-  font-size: 14px;
   font-weight: 400;
-  color: #3D3D3D;
+  color: #6E798C;
 }
 
-#preventivo .costs-table .costs .value {
-  justify-self: end;
-  font-weight: 700;
-}
-
-#preventivo .costs-table .costs .total-name {
-  margin: 0;
-  align-self: center;
-  font-weight: 700;
-  color: #088155;
-}
-
-#preventivo .costs-table .costs div {
-  align-self: center;
-}
-
-#preventivo .costs-table .costs .total-value {
-  margin: 0;
-  align-self: center;
+#months-container .cards .text {
+  height: 180px;
   font-size: 18px;
   font-weight: 700;
-  color: #088155;
+  color: #081F32;
 }
 
-#recomended-container {
-  background-color: #F4F4F4;
-}
-
-#recomended-container .grid-container .cards {
-  width: 284px;
-  height: 308px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-#recomended-container .grid-container .cards p {
-  margin: 0;
-}
-
-#recomended-container .grid-container .cards .title {
-  display: flex;
-  align-items: center;
-  height: 39px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: white;
-  background-color: #F1931F;
-}
-
-#recomended-container .grid-container .cards .title p {
-  margin-left: 25px;
-}
-
-#recomended-container .grid-container .cards .info-text-only {
-  height: 228px;
-}
-
-#recomended-container .grid-container .cards .info {
-  height: 237px;
-}
-
-#recomended-container .grid-container .cards .info .author {
-  margin-top: 19px;
-  margin-left: 25px;
-  font-size: 10px;
-  color: #6E798C;
-}
-
-#recomended-container .grid-container .cards .title-date {
-  color: #6E798C;
+#months-container .cards-container .cards .link {
+  font-family: 'Open-Sans', sans-serif;
   font-size: 11px;
-  font-weight: 600;
-  margin: 9px 25px;
-}
-
-#recomended-container .grid-container .cards .text {
-  max-width: 235px;
-  margin: 0 25px;
-  font-size: 16px;
-}
-
-#recomended-container .grid-container .cards .link {
-  font-size: 11px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #088155;
-  position: relative;
-  right: 20px;
 }
+
+#months-container .cards-container .cards .link img {
+  height: 10px;
+}
+
+
 
 /*FOOTER-------------------------------*/
 
 #footer {
+  margin-top: 151px;
   min-height: 254px;
   background-color: white;
 }
@@ -556,6 +420,11 @@ html, body {
     max-width: 500px;
   }
 
+  #months-container .months {
+    width: 790px;
+    margin: 0 20px;
+  }
+
 }
 
 @media (max-width: 991.98px) {
@@ -565,11 +434,9 @@ html, body {
 
   #upper-container .container-fluid .lines {
     margin-left: 70px;
+    height: 280px;
   }
 
-  #upper-container .container-fluid .container-left .text h1 {
-    max-width: 500px;
-  }
 
   /*PAGE-----------------*/
 
@@ -577,11 +444,6 @@ html, body {
 
 @media (max-width: 767.98px) {
   /*PAGE-------------------*/
-
-  .mid-text {
-    margin-left: 40px;
-    max-width: 570px;
-  }
 
   #upper-container .container-fluid .lines {
     margin-left: 50px;
@@ -596,29 +458,9 @@ html, body {
     height: 180px;
   }
 
-  #preventivo .preventivo-container {
-    margin-left: 0;
-  }
-
-  #preventivo .notice {
-    font-family: 'Open-Sans', sans-serif;
-    font-size: 12px;
-    color: #848484;
-  }
-  
-  #preventivo .notice-green {
-    color: #098155;
-  }
-
-  #preventivo .preventivo-container .visualizza-radio {
-    height: 90px;
-  }
-
-  #preventivo .costs-table .costs {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 390px 50px;
-    grid-template-rows: repeat(6, auto);
+  #months-container .months {
+    width: 390px;
+    margin: 0 20px;
   }
 
   /*FOOTER--------------*/
@@ -710,47 +552,40 @@ html, body {
     font-size: 25px;
   }
 
-  .mid-text {
-    max-width: 330px;
-    margin-top: 30px;
-    margin-left: 10px
-  }
-
   .mid-text p {
-    font-size: 16px;
+    font-size: 20px;
+  }
+  
+  .mid-text {
+    margin-left: 10px;
   }
 
-  #preventivo {
-    padding-bottom: 0px !important;
-  }
-
-  #preventivo .preventivo-container {
+  #months-container .months {
     width: 100vw;
-    padding: 20px;
+  }
+
+  #months-container .cards-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #months-container .cards-container .cards {
+    margin-bottom: 15px;
+    margin-right: 0;
+    width: 100vw;
+    min-height: 233px;
+    background-color: white;
     border-radius: 0px;
   }
   
-  #preventivo .preventivo-container label {
+  #months-container .cards .text {
     font-size: 14px;
   }
   
-  #preventivo .selects .valore-select select {
-    width: 310px;
-  }
-  
-  #preventivo .costs-table .title {
-    padding: 11px 25px;
-  }
-  
-  #preventivo .costs-table .costs {
-    grid-template-columns: auto 50px;
-    grid-template-rows: repeat(6, auto);
-    column-gap: 5px;
-  }
-
   /*FOOTER---------------------*/
 
   #footer {
+    margin-top: 70px;
     height: 530px;
   }
 
