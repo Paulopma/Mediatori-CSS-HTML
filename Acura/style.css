@@ -231,7 +231,7 @@ html, body {
 /*PAGE----------------------------*/
  
 #upper-container {
-  height: 492px;
+  height: 416px;
   background-color: #088155;
 }
 
@@ -241,24 +241,24 @@ html, body {
 }
 
 #upper-container .container-fluid .lines {
-  margin-top: -20px;
+  margin-top: -70px;
   margin-left: 223px;
   width: 35px;
-  height: 294px;
+  height: 170px;
   border-top: 1px solid white;
   border-left: 1px solid white;
   margin-right: 5px;
 }
 
 #upper-container .container-fluid .container-left .text  {
-  height: 310px;
+  height: 290px;
   color: white;
-  margin-top: 15px;
+  margin-top: 78px;
 }
 
-
 #upper-container .container-fluid .container-left .text h1 {
-  max-width: 738px;
+  margin-top: -15px;
+  max-width: 700px;
   font-size: 30px;
 }
 
@@ -269,57 +269,113 @@ html, body {
 }
 
 #upper-container .container-fluid .container-left .text p:last-of-type {
+  margin-top: -20px;
   max-width: 440px;
-  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#upper-container .container-fluid .container-left .profile-text {
+  font-weight: 600;
+}
+
+#upper-container .container-fluid .container-left .orange-text {
+  color: #F1931F;
 }
 
 #upper-container img {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 100px;
 }
 
-.regulation-button {
-  width: 257px;
+#main-text {
+  background-color: white;
+  padding-top: 60px;
+  padding-right: 50px;
+  padding-bottom: 70px;
 }
 
-#regulation {
-  margin-top: 124px;
-  margin-bottom: 70px;
+#main-text .title {
+  margin-left: 0px;
+  margin-bottom: 28px;
 }
 
-#regulation .regulation-title {
-  margin-left: 200px;
-  margin-bottom: 44px;
-}
-
-#regulation .grid-container {
-  margin: 0 20px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, 440px);
-  column-gap: 55px;
-}
-
-#regulation .grid-container .titles, .text {
-  margin: 0 0 7px 0;
+#main-text .paragraphs {
+  margin-left: 55px;
+  max-width: 730px;
   font-family: 'Open-Sans', sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: #646464;
 }
 
-#regulation .grid-container .text {
-  font-weight: 400;
-  margin-bottom: 26px;
+#main-text .text-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 330px);
 }
 
-#regulation .grid-container .orange-text {
+#main-text .link {
+  font-size: 14px;
   color: #F1931F;
-  font-weight: 700;
+  cursor: pointer;
 }
 
+#main-text .social-buttons {
+  width: 730px;
+}
+
+#main-text .mediatori-card {
+  width: 788px;
+  min-height: 264px;
+  margin-top: 58px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#main-text .mediatori-card img {
+  height: 264px;
+  width: 181px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#main-text .mediatori-card .text {
+  margin: 30px 20px 10px 40px;
+  max-width: 530px;
+}
+
+#main-text .mediatori-card .text .sub-text {
+  min-height: 200px;
+}
+
+#main-text .mediatori-card .text .orange-text {
+  margin: 0;
+  font-size: 14px;
+  color: #F1931F;
+}
+
+#main-text .mediatori-card .text .sub-text .name {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #3D3D3D;
+}
+
+#main-text .mediatori-card .text .sub-text .main-text {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+#main-text .mediatori-card .text .link {
+  margin-right: -10px;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #088155;
+}
 
 #recomended-container {
   background-color: #F4F4F4;
@@ -467,16 +523,8 @@ html, body {
     margin: 0 10px;
   }
 
-  #upper-container .container-fluid .container-left .text h1 {
-    max-width: 500px;
-  }
-
   #upper-container .container-fluid .lines {
-    margin-left: 70px;
-  }
-
-  #regulation .regulation-title {
-    margin-left: 70px;
+    margin-left: 120px;
   }
 
 }
@@ -505,20 +553,37 @@ html, body {
   }
 
   #upper-container .container-fluid .container-left .text h1 {
-    font-size: 40px;
-  }
-
-  #upper-container .container-fluid .container-left .text {
-    height: 300px;
-  }
-
-  #regulation {
-    margin-top: 50px;
+    font-size: 25px;
   }
 
   .mid-text {
     margin-left: 40px;
     max-width: 570px;
+  }
+
+  #main-text .social-buttons {
+    width: 560px;
+  }
+
+  #main-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #main-text .text-grid {
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  #main-text .mediatori-card {
+    width: 100vw;
+  }
+
+  #main-text .mediatori-card .text .sub-text {
+    height: auto;
+  }
+
+  #main-text .mediatori-card img {
+    height: inherit;
   }
 
   /*FOOTER--------------*/
@@ -586,40 +651,32 @@ html, body {
   /*PAGE-----------------*/
 
   #upper-container {
-    height: 480px;
+    height: 440px;
     margin-top: 51px;
   }
 
   #upper-container .container-fluid .lines {
-    margin-top: -20px;
+    height: 220px;
+    margin-top: -80px;
     margin-left: 20px;
     width: 10px;
-    height: 310px;
-  }
-
-  #upper-container .container-fluid .container-left {
-    width: 200px;
   }
 
   #upper-container .container-fluid .container-left .text {
-    height: 320px;
-  }
-
-  #upper-container .container-fluid .container-left input {
-    padding: 0 55px;
-    width: 300px;
-  }
-  
-  #upper-container .container-fluid .container-left select {
-    padding: 0 55px;
+    height: 350px;
   }
   
   #upper-container .container-fluid .container-left .text h1 {
-    margin-top: 0px;
-    font-size: 30px;
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  #upper-container .container-fluid .container-left .text p:first-of-type {
+    font-size: 16px;
   }
 
   #upper-container .container-fluid .container-left .text p:last-of-type {
+    margin-top: 0;
     margin-bottom: 30px;
     font-size: 15px;
   }
@@ -634,12 +691,41 @@ html, body {
     font-size: 16px;
   }
 
-  #regulation .regulation-title p {
-    font-size: 20px;
+  #main-text .social-buttons {
+    width: 200px;
   }
-  
-  #regulation .grid-container {
-    grid-template-columns: repeat(1, auto);
+
+  #main-text .text-grid {
+    grid-template-columns: repeat(1, 250px);
+  }
+
+  #main-text .paragraphs {
+    margin-left: 0;
+  }
+
+  #main-text .mediatori-card {
+    border-radius: 0;
+  }
+
+  #main-text .mediatori-card .text {
+    margin-left: 10px;
+  }
+
+  #main-text .mediatori-card .main-text {
+    margin-top: 40px;
+    margin-left: -90px;
+  }
+
+  #main-text .mediatori-card .text .sub-text {
+    height: auto;
+  }
+
+  #main-text .mediatori-card img {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
   }
   
   /*FOOTER---------------------*/
