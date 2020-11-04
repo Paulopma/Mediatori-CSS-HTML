@@ -258,8 +258,8 @@ html, body {
 
 
 #upper-container .container-fluid .container-left .text h1 {
-  max-width: 450px;
-  font-size: 50px;
+  max-width: 738px;
+  font-size: 30px;
 }
 
 #upper-container .container-fluid .container-left .text p:first-of-type {
@@ -275,9 +275,9 @@ html, body {
 }
 
 #upper-container img {
-  width: 507px;
-  height: 549px;
-  border-bottom-left-radius: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
 }
 
 .regulation-button {
