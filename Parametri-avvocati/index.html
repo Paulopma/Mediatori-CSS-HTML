@@ -376,20 +376,164 @@
     </section>
 
     <section id="formulary" class="d-flex flex-column align-items-center">
-      <p class="top-text">
+      <p class="top-text mx-5">
         Questa applicazione è un simulatore per il calcolo dei compensi professionali per avvocati e studi legali che assistono il cliente nella Mediazione civile. Basato sui parametri ministeriali 2014, disciplinati dal DM 55/2014 recante: «Determinazione dei parametri per la liquidazione dei compensi per la professione forense ai sensi dell’art. 1 3 comma 6 della legge 31 dicembre 2012 n. 247». 
         <br><br>
         L’applicazione è aggiornata sulla base del DM n. 37 dell’8/3/2018 pubblicato sulla G.U. n. 96 del 26/4/2018 e in vigore dal 27 aprile 2018. 
         <br><br>
         Se vuoi l’accordo sui compensi da far sottoscrivere al tuo cliente, <a class="orange-text text-nowrap">clicca qui</a>. 
       </p>
-      <div class="form-container">
-        <div class="mid-text title d-flex align-items-center">
-          <div></div>
-          <p class="mb-0">Raccomandato per te</p>
+      <div class="form-container d-flex flex-column">
+        <div class="parametri mb-5">
+          <div class="mid-text title d-flex align-items-center">
+            <div></div>
+            <p class="mb-0">Parametri avvicati 2018 - Mediazione Civile</p>
+          </div>
+          <p class="mb-2">Valore della causa</p>
+          <div class="select d-flex align-items-center">
+            <select name="valore" id="valore">
+              <option value="1" selected hidden>Fino a Euro 1100,00</option>
+              <option value="2">Option 1</option>
+              <option value="3">Option 2</option>
+              <option value="4">Option 3</option>
+            </select>
+            <img class="dropdown-icon" src="Images/dropdownIcon.svg" alt="dropdown">
+          </div>
         </div>
-        <p>Valore della causa</p>
 
+        <div class="fasi mb-5">
+          <div class="input-grid">
+            <div class="mid-text title d-flex align-items-center">
+              <div></div>
+              <p class="mb-0">Fasi</p>
+            </div>
+            <div class="mid-text title d-none d-sm-block ml-2">
+              <p class="mb-0">Compenso</p>
+            </div>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <input class="value-checkbox d-sm-none mr-2 mt-sm-0 mb-sm-0" type="checkbox">
+              <p class="m-0">Attivazione</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center">
+                <input class="value-checkbox d-none d-sm-block mt-3 mb-1 mt-sm-0 mb-sm-0" type="checkbox">
+                <input class="value-input p-3 mx-sm-2 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="€                   0,00">
+              </div>
+              <p class="value-text text-nowrap">(deposito e primo incontro)</p>
+            </div>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <input class="value-checkbox d-sm-none mr-2 mt-sm-0 mb-sm-0" type="checkbox">
+              <p class="m-0">Negoziazione</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center">
+                <input class="value-checkbox d-none d-sm-block mt-3 mb-1 mt-sm-0 mb-sm-0" type="checkbox">
+                <input class="value-input p-3 mx-sm-2 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="€                   0,00">
+              </div>
+              <p class="value-text text-nowrap ml-sm-0">(ingresso in mediazione)</p>
+            </div>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <input class="value-checkbox d-sm-none mr-2 mt-sm-0 mb-sm-0" type="checkbox">
+              <p class="m-0">Conciliazione</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center">
+                <input class="value-checkbox d-none d-sm-block mt-3 mb-1 mt-sm-0 mb-sm-0" type="checkbox">
+                <input class="value-input p-3 mx-sm-2 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="€                   0,00">
+              </div>
+              <p class="value-text text-nowrap ml-sm-0">(accordo raggiunto)</p>
+            </div>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <p class="m-0 ml-3 ml-sm-0 sub-title">TOTALE</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center ml-sm-1">
+                <input class="value-input p-3 ml-3 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="€                   0,00">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spese">
+          <div class="mid-text title d-flex align-items-center">
+            <div></div>
+            <p class="mb-0">Spese</p>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <p class="m-0 ml-3 ml-sm-0">Spese esenti</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center ml-sm-1">
+                <input class="value-input p-3 ml-3 mr-2 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="€                   0,00">
+              </div>
+              <p class="value-text text-nowrap ml-sm-0">art. 15 DPR 633/72</p>
+            </div>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <p class="m-0 ml-3 ml-sm-0">Spese di trasferta</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center ml-sm-1">
+                <input class="value-input p-3 ml-3 mr-2 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="€                   0,00">
+              </div>
+              <p class="value-text text-nowrap ml-sm-0">art. 15 DPR 633/72</p>
+            </div>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <p class="m-0 ml-3 ml-sm-0">Altre spese imponibili</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center ml-sm-1">
+                <input class="value-input p-3 ml-3 mr-2 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="€                   0,00">
+              </div>
+              <p class="value-text text-nowrap ml-sm-0">art. 15 DPR 633/72</p>
+            </div>
+          </div>
+          <div class="input-grid mb-2">
+            <div class="d-flex align-items-center">
+              <input class="value-checkbox d-sm-none mr-2 mt-sm-0 mb-sm-0" type="checkbox">
+              <p class="m-0">Spese generali</p>
+            </div>
+            <div class="input-container d-flex flex-column flex-sm-row align-items-sm-center">
+              <div class="d-flex align-items-center">
+                <input class="value-checkbox d-none d-sm-block mt-3 mb-1 mt-sm-0 mb-sm-0" type="checkbox">
+                <input class="value-input p-3 mx-sm-2 mt-3 mb-1 mt-sm-0 mb-sm-0" type="text" placeholder="%                  0,00">
+              </div>
+              <p class="value-text text-nowrap ml-sm-0">art. 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="accessori mt-4">
+          <div class="mid-text title d-flex align-items-center">
+            <div></div>
+            <p class="mb-0">Accessori</p>
+          </div>
+          <div class="d-flex">
+            <div class="d-flex align-items-center mr-4 mr-sm-5">
+              <input class="mr-2" type="checkbox">
+              <p class="m-0">IVA</p>
+            </div>
+            <div class="d-flex align-items-center mr-4 mr-sm-5">
+              <input class="mr-2" type="checkbox">
+              <p class="m-0">CPA</p>
+            </div>
+            <div class="d-flex align-items-center mr-sm-5">
+              <input class="mr-2" type="checkbox">
+              <p class="m-0">Rit. Acc.</p>
+            </div>
+          </div>
+        </div>
+        <button class="primary-button btn align-self-center mt-5">Calcola</button>
       </div>
     </section>
     
