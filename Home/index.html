@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+  <title>Mediatori profile</title>
+</head>
+
+<body>
+  
+  <!--HEADER--> 
+
+  <header id="header" class="container-fluid position-fixed">
+    <nav class="navbar navbar-expand-lg container-fluid">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand d-flex">
+          <img src="Images/logo.svg" alt="logo">
+          <img class="ml-2 d-none d-lg-block" src="Images/logo-101mediatori.svg" alt="logo-101">
+        </a>
+
+        <div class="d-lg-none">
+          <div class="collapsed-menu d-flex align-items-center justify-content-end">
+
+            <div class="contact-icons d-flex align-items-center">
+              <svg class="user-icon contact-icons icons mr-4" 
+                data-toggle="collapse" 
+                href="#user-collapse" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="user-collapse" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.395 15.36C16.605 14.285 12.61 14.73 12 13.5C10.79 11.06 11.285 11.515 12.07 10.9101C12.81 10.3451 12.775 8.85006 13.23 8.32007C13.69 7.78007 13.9 6.24008 13.73 5.65508C13.5 4.88509 13.15 5.30509 13.095 4.72009C12.98 3.4651 13.295 2.4351 12.59 1.82511C11.91 1.23511 11.055 0.0201246 9.66499 0.0001247C9.17999 -0.00487527 8.63 0.140124 8 0.500121C5 0.180123 5.02 3.4651 4.905 4.72009C4.85 5.30009 4.5 4.88009 4.27 5.65508C4.095 6.23508 4.31 7.78007 4.77 8.32007C5.225 8.85006 5.18999 10.3451 5.92999 10.9101C6.71999 11.515 7.215 11.06 6 13.5C5.39 14.73 1.39 14.28 0.604996 15.36C-4.29153e-06 16.18 0 18 0 18H9H18C18 18 18 16.18 17.395 15.36Z"/>
+              </svg>
+              <a class="collapse ml-n3 mr-2" id="user-collapse">Mediatore</a>
+              
+              <svg class="location-icon contact-icons icons mr-4"  
+                data-toggle="collapse" 
+                href="#location-collapse" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="location-collapse" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9495 2.187C9.21559 -0.729 4.78441 -0.729 2.05046 2.187C-0.683487 5.103 -0.683487 9.8325 2.05046 12.7485L7.00219 18L11.9495 12.7485C14.6835 9.8325 14.6835 5.103 11.9495 2.187ZM7.00219 9.45C5.79488 9.45 4.81503 8.442 4.81503 7.2C4.81503 5.958 5.79488 4.95 7.00219 4.95C8.2095 4.95 9.18935 5.958 9.18935 7.2C9.18935 8.442 8.2095 9.45 7.00219 9.45Z"/>
+              </svg>
+              <a class="collapse ml-n3 mr-2" id="location-collapse">Sedi</a>
+
+              <a href="#">
+                <svg class="phone-icon contact-icons icons mr-3" width="18" height="17" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.8446 11.9783C16.7346 11.9533 16.6196 11.9333 16.4995 11.9333C16.4945 11.9333 16.4895 11.9333 16.4845 11.9333C14.7791 11.7183 13.1886 11.1531 11.7832 10.3029L9.60265 12.5335C7.9922 11.4482 6.59682 9.99778 5.51152 8.49737H5.50152H5.50652L7.68712 6.26674C6.83688 4.86135 6.27173 3.24091 6.05667 1.54044C6.05667 1.53543 6.05667 1.52042 6.05667 1.51542C6.05667 1.39539 6.04167 1.27536 6.01166 1.16533C5.85661 0.500147 5.26145 0 4.55125 0H2.95081H1.50542C0.685189 0 0.0250069 0.655183 0.00500137 1.47041C0.00500137 1.48041 0 1.49542 0 1.50542C0 1.59045 0.0100027 1.67547 0.0250069 1.7605C0.340094 5.04141 1.52542 8.05224 3.34092 10.5729C4.47623 12.1434 5.85662 13.5237 7.42705 14.6591C9.95274 16.4796 12.9636 17.6599 16.2345 17.975C16.3195 17.99 16.4045 18 16.4945 18C16.5096 18 16.5196 17.995 16.5296 17.995C17.3448 17.975 18 17.3148 18 16.4946V15.0492V13.4437C18.005 12.7285 17.5098 12.1334 16.8446 11.9783Z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="false">
+              <svg class="expand-icon icons" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 0H12V2.84211H23V0Z"/>
+                <path d="M23 7.57898H0V10.4211H23V7.57898Z"/>
+                <path d="M23 15.1578H5V17.9999H23V15.1578Z"/>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+          <div class="expanded-contacts d-flex align-items-center">
+            <a class="nav-link" href="#">Mediatori</a>
+            <a class="nav-link" href="#">Sedi</a>
+            <a class="nav-link" href="#">Contatti</a>
+            <a class="nav-link telephone" href="#">Tel 800.910676</a>
+            <button type="button" class="btn nav-link ml-3">Deposita Aderisci</button>
+          </div>
+        </div>
+        
+      </div>
+
+    </nav>
+  </header>
+  
+  <!--NAV-->
+
+  <nav class="collapse" id="navbarResponsive">
+    <div id="small-nav">
+      <div class="navbar-toggler p-3 mb-3 container-fluid d-flex justify-content-end" 
+        data-toggle="collapse" 
+        data-target="#navbarResponsive" 
+        aria-controls="conteudoNavbarSuportado" 
+        aria-expanded="true">
+        <img src="Images/close-icon.svg" alt="close-icon">
+      </div>
+      <div class="nav-items d-flex flex-column">
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#mediazione-collapse" 
+          aria-expanded="true" 
+          aria-controls="mediazione-collapse"
+        >
+          COSA È LA MEDIAZIONE
+        </a>
+        <div class="collapse show" id="mediazone-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#quanto-costa-collapse" 
+          aria-expanded="true" 
+          aria-controls="quanto-costa-collapse"
+        >
+          QUANTO COSTA
+        </a>
+        <div class="collapse show" id="quanto-costa-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+            <a class="mb-4" href="">
+              <p class="main-items" href="#">PREVENTIVO ONLINE</p>
+              <p class="sub-items">Seleziona la sede ed il valore della tua pratica</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#">come e quando si paga</p>
+              <p class="sub-items">Un motivo in più per affidarci le tue </p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">Effetua un pagamento</p>
+              <p class="sub-items">6 facili modalità di pagamento</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">tabella</p>
+              <p class="sub-items">I nostri costi</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">promozioni</p>
+              <p class="sub-items">Un motivo in più per affidarci le tue</p>
+            </a>
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#approfondisci-collapse" 
+          aria-expanded="true" 
+          aria-controls="approfondisci-collapse"
+        >
+          APPROFONDISCI
+        </a>
+        <div class="collapse show" id="approfondisci-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#avvocato-collapse" 
+          aria-expanded="true" 
+          aria-controls="avvocato-collapse"
+        >
+          SEI UN AVVOCATO
+        </a>
+        <div class="collapse show" id="avvocato-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <div class="line py-2"></div>
+
+        <button type="button" class="btn mt-5 mb-5">Deposita Aderisci</button>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="d-none d-lg-block">
+    <nav id="nav" class="container-fluid d-flex justify-content-center">
+      <div class="row">
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"   
+            role="button" 
+            data-toggle="collapse" 
+            href="#cosa-mediazione" 
+            aria-expanded="false" 
+            aria-controls="cosa-mediazione"
+          >COSA È LA MEDIAZIONE</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"  
+            role="button" 
+            data-toggle="collapse" 
+            href="#quanto-costa" 
+            aria-expanded="false" 
+            aria-controls="quanto-costa"
+          >QUANTO COSTA</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"   
+            role="button" 
+            data-toggle="collapse" 
+            href="#approfondisci" 
+            aria-expanded="false" 
+            aria-controls="approfondisci"
+          >APPROFONDISCI</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"    
+            role="button" 
+            data-toggle="collapse" 
+            href="#sei-avvocato" 
+            aria-expanded="false" 
+            aria-controls="sei-avvocato"
+          >SEI UN AVVOCATO</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section id="nav-collapse">
+    <div class="container-fluid d-flex justify-content-center">
+
+      <div id="quanto-costa" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="cosa-mediazione" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="approfondisci" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="sei-avvocato" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--PAGE-->
+
+  <main>
+    <section id="upper-container" class="d-flex">
+      <div class="container-fluid d-flex align-items-center">
+        <div class="lines"></div>
+        <div class="container-left d-flex">
+          <div class="text d-flex flex-column justify-content-around">
+            <p></p>
+            <div>
+              <h1>Deposita GRATIS le tue mediazioni </h1>
+              <p>
+                Basta attivare gratuitamente la "101Mediatori Prime" e risparmierai per sempre i diritti di segreteria su tutte le mediazioni.
+              </p>
+            </div>
+            <div class="select-container mb-2 d-flex align-items-center">
+              <button class="primary-button btn">Scopri di più</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="d-none d-xl-block" src="Images/home-upper-image.png" alt="home">
+    </section>
+
+    <section id="deposito">
+      <div class="mid-text mb-4 d-flex align-items-center">
+        <div></div>
+        <p>Il deposito più semplice e veloce</p>
+      </div>
+      <p class="text mb-5">Compila on line e crea tutte le bozze che vuoi, inserisci gli allegati e, quando sei pronto per il deposito, ti basterà un click</p>
+      <div class="cards-container row">
+        <div class="cards">
+          <img class="mb-3" src="Images/clock-icon.svg" alt="calendar">
+          <p class="cards-text">
+            Suggerisci le date dell'incontro e i mediatori
+          </p>
+        </div>
+
+        <div class="cards">
+          <img class="mb-3" src="Images/credit-card-icon.svg" alt="calendar icon">
+          <p class="cards-text">
+            Paghi anche on line o con bonifico
+          </p>
+        </div>
+
+        <div class="cards">
+          <img class="mb-3" src="Images/credit-card-icon.svg" alt="calendar icon">
+          <p class="cards-text">
+            La tua area riservata conserva tutto in ordine
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="conference" class="d-flex flex-row-reverse flex-wrap justify-content-end">
+      <div class="right-texts">
+        <div class="mid-text mb-4 d-flex align-items-center">
+          <div></div>
+          <p>Partecipa in videoconferenza o in presenza</p>
+        </div>
+        <p class="texts mb-5 pb-3 mb-lg-5 pb-lg-5">
+          Compila on line e crea tutte le bozze che vuoi, inserisci gli allegati e, quando sei pronto per il deposito, ti basterà un click.
+        </p>
+
+        <div class="mid-text mb-4 d-flex align-items-center">
+          <div></div>
+          <p>La nostra promessa di qualità</p>
+        </div>
+        <p class="texts mb-5">
+          Hai la tranquillità di essere seguito solo da mediatori di elevata capacità. Se trovi dei mediatori che si aggiornano ogni mese più dei nostri ti rimborsiamo l'importo versato.
+        </p>
+      </div>
+
+      <div class="images d-flex flex-column">
+        <img class="top-image" src="Images/conference-top-image.png" alt="conference top">
+        <img class="bottom-image" src="Images/conference-bottom-image.png" alt="conference bottom">
+      </div>
+    </section>
+    
+    <section id="instructions">
+      <div class="mid-text mb-4 d-flex flex-nowrap align-items-center">
+        <div></div>
+        <p>L'esperienza 101Mediatori in 3 passaggi</p>
+      </div>
+      <p class="sub-title">La mediazione diventa semplice</p>
+
+      <div class="cards-container row">
+        <div class="cards">
+          <img class="mb-3" src="Images/clock-icon.svg" alt="calendar icon">
+          <div class="sub-title d-flex align-items-center">
+            <p class="number m-0 mr-2">1</p>
+            <p class="m-0 mt-1">ACCEDI ALLA TUA AREA</p>
+          </div>
+          <p class="text mt-1">
+            Accedi nella tua area riservata. La prima volta devi registrarti, basta un click!
+          </p>
+        </div>
+
+        <div class="cards">
+          <img class="mb-3" src="Images/clock-icon.svg" alt="calendar icon">
+          <div class="sub-title d-flex align-items-center">
+            <p class="number m-0 mr-2">2</p>
+            <p class="m-0 mt-1">CREA ISTANZA</p>
+          </div>
+          <p class="text mt-1">
+            Inserisci le parti, le ragioni e la data del primo incontro. Puoi anche salvare una bozza per terminarla successivamente.
+          </p>
+        </div>
+
+        <div class="cards">
+          <img class="mb-3" src="Images/clock-icon.svg" alt="calendar icon">
+          <div class="sub-title d-flex align-items-center">
+            <p class="number m-0 mr-2">3</p>
+            <p class="m-0 mt-2">DEPOSITA ISTANZA</p>
+          </div>
+          <p class="text mt-1">
+            Invia l’istanza via pec o via fax assieme al pagamento dei diritti.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="mid-text d-flex flex-nowrap align-items-center">
+        <div></div>
+        <p>Le opinioni degli avvocati nostri clienti</p>
+      </div>
+      <div class="review-cards d-flex align-items-center justify-content-center">
+        <img class="left-arrow d-none d-xl-block" src="Images/left-arrow.svg" alt="left arrow">
+        <div class="cards-container d-flex" >
+          <div class="cards d-flex flex-column">
+            <div class="rate d-flex align-items-center">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <p class="m-0 mt-1 ml-2">5.0</p>
+            </div>
+            <p class="date m-0 mt-1 mb-3">Inviata il: 07/10/2020</p>
+            <div class="text d-flex">
+              <img class="align-self-start mr-2" src="Images/quote-icon.svg" alt="quote">
+              <p class="text-wrap">Ancora una volta esperienza positiva, l'Avv. Calabrò si è confermata un mediatore competente ed equilibrato.”</p>
+            </div>
+            <p class="name m-0 align-self-end">Avvocato Luca Carbone da Roma</p>
+          </div>
+
+          <div class="cards d-flex flex-column">
+            <div class="rate d-flex align-items-center">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <p class="m-0 mt-1 ml-2">5.0</p>
+            </div>
+            <p class="date m-0 mt-1 mb-3">Inviata il: 07/10/2020</p>
+            <div class="text d-flex">
+              <img class="align-self-start mr-2" src="Images/quote-icon.svg" alt="quote">
+              <p class="text-wrap">Ancora una volta esperienza positiva, l'Avv. Calabrò si è confermata un mediatore competente ed equilibrato.”</p>
+            </div>
+            <p class="name m-0 align-self-end">Avvocato Luca Carbone da Roma</p>
+          </div>
+
+          <div class="cards d-flex flex-column">
+            <div class="rate d-flex align-items-center">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <img src="Images/grade-star.svg" alt="grade star">
+              <p class="m-0 mt-1 ml-2">5.0</p>
+            </div>
+            <p class="date m-0 mt-1 mb-3">Inviata il: 07/10/2020</p>
+            <div class="text d-flex">
+              <img class="align-self-start mr-2" src="Images/quote-icon.svg" alt="quote">
+              <p class="text-wrap">Ancora una volta esperienza positiva, l'Avv. Calabrò si è confermata un mediatore competente ed equilibrato.”</p>
+            </div>
+            <p class="name m-0 align-self-end">Avvocato Luca Carbone da Roma</p>
+          </div>
+
+        </div>
+        <img class="right-arrow d-none d-xl-block" src="Images/right-arrow.svg" alt="right arrow">
+      </div>
+
+      <div class="mid-text d-flex flex-nowrap align-items-center">
+        <div></div>
+        <p>Le video interviste degli avvocati clienti</p>
+      </div>
+
+      <!--must be applied in Javascript-->
+      <div class="video-carousel d-flex align-items-center justify-content-center">
+        <img src="Images/video-preview-small-example1.png" alt="video preview">
+        <img src="Images/video-preview-large-example.png" alt="video preview">
+        <img src="Images/video-preview-small-example2.png" alt="video preview">
+      </div>
+    </section>
+    
+    <section id="mid-bottom" class="d-flex flex-column align-items-center">
+      <div class="map d-flex flex-row-reverse flex-wrap flex-grow justify-content-end">
+        <div class="texts-container">
+          <div class="mid-text d-flex flex-nowrap align-items-center">
+            <div></div>
+            <p>Dove siamo </p>
+          </div>
+          <p class="text">Abbiamo 100 sedi in tutta Italia con anni di esperienza. I centri sottostanti sono tutti preparati per gestire tutte le materie di mediazione obbligatoria, civile e commerciale.</p>
+          <button class="primary-button btn">Cerca un ufficio</button>
+        </div>
+        <img src="Images/map.png" alt="map">
+      </div>
+
+      <div class="civile">
+        <div class="mid-text d-flex flex-nowrap align-items-center">
+          <div></div>
+          <p>Mediazione Civile Obbligatoria: Cos’è e Come Funziona?</p>
+        </div>
+        <div class="texts-container d-flex">
+          <div>
+            <p class="text">
+              La mediazione civile è una procedura extragiudiziaria ad esito volontario, dove le parti e i loro avvocati si incontrano con un terzo soggetto neutrale ed imparziale (il mediatore), il cui compito è di aiutarli a raggiungere una soluzione concordata alla controversia.
+              <br><br>
+              A differenza di un normale causa giuridica, nella mediazione civile (spesso definita come mediazione obbligatoria) l’esito non viene imposto dal giudice o dall’arbitro, ma le parti sono protagonisti del'intero procedimento e hanno il pieno controllo dell'esito finale . In qualunque momento, infatti, esse trovino un accordo, la mediazione sarà risolta definitivamente.
+              <br><br>
+              Un’altra caratteristica fondamentale della mediazione civile consiste nella riservatezza dell’intero procedimento, in quanto nulla di quanto detto da una parte al mediatore (se questa così desidera) potrà essere rivelato all’altra parte.
+              <br><br>
+              La mediazione civile obbligatoria consente elevati risparmi, sia in senso strettamente economico, sia in senso temporale: una procedura di mediazione civile può essere avviata il giorno seguente alla richiesta e concludersi già in giornata. Anche in questo caso, il paragone con un processo civile è inevitabile e tutti sanno per quanti anni esso si possa protrarre nel tempo. 
+            </p>
+            <button class="primary-button btn">Leggi tutto</button>
+          </div>
+          <img class="d-none d-md-block" src="Images/civile-photo.png" alt="civile">
+        </div>
+      </div>
+    </section>
+
+    <!--BOTTOM-->
+    
+    <section id="news">
+      <div class="mid-text d-flex flex-nowrap align-items-center">
+        <div></div>
+        <p>Mediazione Civile Obbligatoria: Cos’è e Come Funziona?</p>
+      </div>
+      <div class="cars-container row d-flex justify-content-center">
+        <div class="cards d-flex">
+          <img src="Images/news-image1.png" alt="news">
+          <div class="texts-container d-flex flex-column">
+            <div class="d-flex justify-content-between mb-2">
+              <p class="title m-0">NEWS</p>
+              <p class="date m-0">17/09/2020</p>
+            </div>
+            <p class="text m-0">
+              La mediazione obbligatoria per le controversie da Coronavirus
+            </p>
+            <p class="link align-self-end m-0">
+              Leggi tutto
+              <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg>
+            </p>
+          </div>
+        </div>
+
+        <div class="cards d-flex">
+          <img src="Images/news-image2.png" alt="news">
+          <div class="texts-container d-flex flex-column">
+            <div class="d-flex justify-content-between mb-2">
+              <p class="title m-0">Elenco Convegni</p>
+              <p class="date m-0">23/10/2020</p>
+            </div>
+            <p class="text m-0">
+              Corso  “Avvocato Mediatore”, di 18 ore per  Avvocati mediatori di diritto
+            </p>
+            <p class="link align-self-end m-0">
+              Iscriviti ora
+              <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg>
+            </p>
+          </div>
+        </div>
+
+        <div class="cards d-flex">
+          <img src="Images/news-image1.png" alt="news">
+          <div class="texts-container d-flex flex-column">
+            <div class="d-flex justify-content-between mb-2">
+              <p class="title m-0">manuale mediazione</p>
+              <p class="date m-0">17/09/2020</p>
+            </div>
+            <p class="text m-0">
+              La gestione del conflitto nella mediazione civile
+            </p>
+            <p class="link align-self-end m-0">
+              Aquista
+              <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--FOOTER-->
+
+    <section id="footer" class="d-flex flex-column justify-content-between">
+      <div class="row contacts align-items-start justify-content-around ">
+        
+        <div class="mx-4 my-2 phone-adress">
+          <p class="m-0">Tel 800.910676</p>
+          <span>Siamo a tua disposizione dal lun<br> al ven; 9-13 e 15-19</span>
+        </div>
+
+        <div class="mx-4 my-2 social">
+          <p class="mt-0">Resta Connesso</p>
+          <div class="icons d-flex justify-content-between align-items-center">
+            <a href="#">
+              <img class="facebook-icon"src="Images/facebookIcon.svg" alt="facebook-icon">
+            </a>
+            <a href="#">
+              <img class="linkedin-icon" src="Images/linkedin-icon.svg" alt="linkedin-icon">
+            </a>
+            <a href="#">
+              <img class="youtube-icon" src="Images/youtube-icon.svg" alt="youtube-icon">
+            </a>
+          </div>   
+        </div>
+
+      <div class="mx-4 my-2 newsletter">
+        <p class="mt-0">Inscriviti alla newsletter</p>
+        <div class="flex-column flex-sm-row input-button d-flex">
+          <input placeholder="Inserisci il tuo indirizzo email" type="text">
+          <button type="button" class="btn">Inscriviti</button>
+        </div>
+      </div>
+  
+      </div>
+      <p class="register my-3 mx-4">
+        © 2011-2020 - 101Mediatori.it | Gruppo101 srl, iscritto al nr 
+        294 degli Organismi di mediazione e al nr 374 degli Enti di formazione | 
+        P.IVA 03952990756
+      </p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+</body>
+</html>
