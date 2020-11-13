@@ -36,10 +36,8 @@ html, body {
 }
 
 .mid-text div {
-  height: 0;
-  width: 35px;
-  background-color: #088155;
-  border: 1px solid #088155;
+  min-width: 35px;
+  border-bottom: 2px solid #088155;
 }
 
 .mid-text p {

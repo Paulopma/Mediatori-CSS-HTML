@@ -34,9 +34,8 @@ html, body {
 }
 
 .mid-text div {
-  width: 35px;
-  background-color: #088155;
-  border: 1px solid #088155;
+  min-width: 35px;
+  border-bottom: 2px solid #088155;
 }
 
 .mid-text p {
@@ -340,6 +339,7 @@ html, body {
 
 #recomended-container {
   background-color: #F4F4F4;
+  padding-bottom: 71px;
 }
 
 #recomended-container .grid-container .cards {
@@ -408,7 +408,6 @@ html, body {
 /*FOOTER-------------------------------*/
 
 #footer {
-  margin-top: 151px;
   min-height: 254px;
   background-color: white;
 }

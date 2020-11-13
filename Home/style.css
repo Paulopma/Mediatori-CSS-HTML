@@ -30,9 +30,8 @@ html, body {
 }
 
 .mid-text div {
-  min-width: 50px;
-  background-color: #088155;
-  border: 1px solid #088155;
+  min-width: 35px;
+  border-bottom: 2px solid #088155;
 }
 
 .mid-text p {
@@ -416,8 +415,7 @@ html, body {
 }  
 
 #reviews .mid-text div {
-  border: 1px solid white;
-  background-color: white;
+  border-bottom: 2px solid white;
 }
 
 #reviews .review-cards {
@@ -872,10 +870,6 @@ html, body {
   .mid-text p {
     font-size: 25px;
     margin-right: 15px;
-  }
-
-  .mid-text div {
-    min-width: 30px; 
   }
 
   #deposito {
