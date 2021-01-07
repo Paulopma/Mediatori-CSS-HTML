@@ -1,0 +1,142 @@
+html, body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  background-color: #084F35;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+p {
+  margin: 0;
+  color: #3D3D3D;
+}
+
+/*general classes---------------------------*/
+
+.placeholder-text::placeholder {
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #898989;
+}
+
+/*page-------------------------------------------*/
+
+#form-container {
+  width: 418px;
+  height: 521px;
+  background-color: white;
+  padding: 0 55px;
+  border-radius: 5px;
+}
+
+.logo { 
+  margin-top: 104px;
+  margin-bottom: 37px;
+}
+
+#form-container .tittle {
+  margin-top: 30px;
+  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #3D3D3D;
+}
+
+#form-container .social img {
+  width: 34px;
+  margin: 0 6px;
+}
+
+#form-container .sub-tittle {
+  margin-top: 36px;
+  margin-bottom: 19px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#form-container .form .input-icons {
+  margin-right: -35px;
+  z-index: 0;
+}
+
+#form-container .form .inputs-container input {
+  padding: 0 50px;
+  width: 296px;
+  height: 45px;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+}
+
+#form-container .form .inputs-container input:focus {
+  outline: none !important;
+  border: 1px solid #088155;
+}
+
+#form-container .check-box {
+  margin-top: 17px;
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+#form-container .check-box p {
+  margin-left: 12px;
+}
+
+#form-container .login-button {
+  width: 296px;
+  height: 41px;
+  background-color: #088155;
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+}
+
+#form-container .login-button:hover {
+  background-color: #056340
+}
+
+#form-container .login-button:active {
+  background-color: #088155;
+}
+
+#form-container .signup {
+  margin-top: 19px;
+  margin-bottom: 9px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#form-container .green-text {
+  margin-left: 4px;
+  color: #088155;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/*media queries-----------------------------*/
+
+@media (max-width: 1199.98px) {
+
+} 
+
+@media (max-width: 991.98px) {
+} 
+
+@media (max-width: 767.98px) {
+  .logo { 
+    margin-top: 70px;
+    margin-bottom: 37px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .logo { 
+    margin-top: 40px;
+    margin-bottom: 37px;
+  }
+  
+}

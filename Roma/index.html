@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+  <title>Mediatori</title>
+</head>
+
+<body>
+  
+  <!--HEADER--> 
+
+  <header id="header" class="container-fluid position-fixed">
+    <nav class="navbar navbar-expand-lg container-fluid">
+      <div class="container d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand d-flex">
+          <img src="Images/logo.svg" alt="logo">
+          <img class="ml-2 d-none d-lg-block" src="Images/logo-101mediatori.svg" alt="logo-101">
+        </a>
+
+        <div class="d-lg-none">
+          <div class="collapsed-menu d-flex align-items-center justify-content-end">
+
+            <div class="contact-icons d-flex">
+              <svg class="user-icon contact-icons icons mr-4" 
+                data-toggle="collapse" 
+                href="#user-collapse" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="user-collapse" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.395 15.36C16.605 14.285 12.61 14.73 12 13.5C10.79 11.06 11.285 11.515 12.07 10.9101C12.81 10.3451 12.775 8.85006 13.23 8.32007C13.69 7.78007 13.9 6.24008 13.73 5.65508C13.5 4.88509 13.15 5.30509 13.095 4.72009C12.98 3.4651 13.295 2.4351 12.59 1.82511C11.91 1.23511 11.055 0.0201246 9.66499 0.0001247C9.17999 -0.00487527 8.63 0.140124 8 0.500121C5 0.180123 5.02 3.4651 4.905 4.72009C4.85 5.30009 4.5 4.88009 4.27 5.65508C4.095 6.23508 4.31 7.78007 4.77 8.32007C5.225 8.85006 5.18999 10.3451 5.92999 10.9101C6.71999 11.515 7.215 11.06 6 13.5C5.39 14.73 1.39 14.28 0.604996 15.36C-4.29153e-06 16.18 0 18 0 18H9H18C18 18 18 16.18 17.395 15.36Z"/>
+              </svg>
+              <a class="collapse ml-n3 mr-2" id="user-collapse">Mediatore</a>
+              
+              <svg class="location-icon contact-icons icons mr-4"  
+                data-toggle="collapse" 
+                href="#location-collapse" 
+                role="button" 
+                aria-expanded="false" 
+                aria-controls="location-collapse" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9495 2.187C9.21559 -0.729 4.78441 -0.729 2.05046 2.187C-0.683487 5.103 -0.683487 9.8325 2.05046 12.7485L7.00219 18L11.9495 12.7485C14.6835 9.8325 14.6835 5.103 11.9495 2.187ZM7.00219 9.45C5.79488 9.45 4.81503 8.442 4.81503 7.2C4.81503 5.958 5.79488 4.95 7.00219 4.95C8.2095 4.95 9.18935 5.958 9.18935 7.2C9.18935 8.442 8.2095 9.45 7.00219 9.45Z"/>
+              </svg>
+              <a class="collapse ml-n3 mr-2" id="location-collapse">Sedi</a>
+
+              <a href="#">
+                <svg class="phone-icon contact-icons icons mr-3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.8446 11.9783C16.7346 11.9533 16.6196 11.9333 16.4995 11.9333C16.4945 11.9333 16.4895 11.9333 16.4845 11.9333C14.7791 11.7183 13.1886 11.1531 11.7832 10.3029L9.60265 12.5335C7.9922 11.4482 6.59682 9.99778 5.51152 8.49737H5.50152H5.50652L7.68712 6.26674C6.83688 4.86135 6.27173 3.24091 6.05667 1.54044C6.05667 1.53543 6.05667 1.52042 6.05667 1.51542C6.05667 1.39539 6.04167 1.27536 6.01166 1.16533C5.85661 0.500147 5.26145 0 4.55125 0H2.95081H1.50542C0.685189 0 0.0250069 0.655183 0.00500137 1.47041C0.00500137 1.48041 0 1.49542 0 1.50542C0 1.59045 0.0100027 1.67547 0.0250069 1.7605C0.340094 5.04141 1.52542 8.05224 3.34092 10.5729C4.47623 12.1434 5.85662 13.5237 7.42705 14.6591C9.95274 16.4796 12.9636 17.6599 16.2345 17.975C16.3195 17.99 16.4045 18 16.4945 18C16.5096 18 16.5196 17.995 16.5296 17.995C17.3448 17.975 18 17.3148 18 16.4946V15.0492V13.4437C18.005 12.7285 17.5098 12.1334 16.8446 11.9783Z"/>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="false">
+              <svg class="expand-icon icons" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 0H12V2.84211H23V0Z"/>
+                <path d="M23 7.57898H0V10.4211H23V7.57898Z"/>
+                <path d="M23 15.1578H5V17.9999H23V15.1578Z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block">
+          <div class="expanded-contacts d-flex align-items-center">
+            <a class="nav-link" href="#">Mediatori</a>
+            <a class="nav-link" href="#">Sedi</a>
+            <a class="nav-link" href="#">Contatti</a>
+            <a class="nav-link telephone" href="#">Tel 800.910676</a>
+            <button type="button" class="btn nav-link ml-3">Deposita Aderisci</button>
+          </div>
+        </div>
+        
+      </div>
+
+    </nav>
+  </header>
+  
+  <!--NAV-->
+
+  <div class="collapse" id="navbarResponsive">
+    <div id="small-nav">
+      <div class="navbar-toggler p-3 mb-3 container-fluid d-flex justify-content-end" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="true">
+        <img src="Images/close-icon.svg" alt="close-icon">
+      </div>
+      <div class="nav-items d-flex flex-column">
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#mediazione-collapse" 
+          aria-expanded="true" 
+          aria-controls="mediazione-collapse"
+        >
+          COSA È LA MEDIAZIONE
+        </a>
+        <div class="collapse show" id="mediazone-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#quanto-costa-collapse" 
+          aria-expanded="true" 
+          aria-controls="quanto-costa-collapse"
+        >
+          QUANTO COSTA
+        </a>
+        <div class="collapse show" id="quanto-costa-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+            <a class="mb-4" href="">
+              <p class="main-items" href="#">PREVENTIVO ONLINE</p>
+              <p class="sub-items">Seleziona la sede ed il valore della tua pratica</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#">come e quando si paga</p>
+              <p class="sub-items">Un motivo in più per affidarci le tue </p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">Effetua un pagamento</p>
+              <p class="sub-items">6 facili modalità di pagamento</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">tabella</p>
+              <p class="sub-items">I nostri costi</p>
+            </a>
+            <a class="mb-4" href="">
+              <p class="main-items" href="#" class="pb-1">promozioni</p>
+              <p class="sub-items">Un motivo in più per affidarci le tue</p>
+            </a>
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#approfondisci-collapse" 
+          aria-expanded="true" 
+          aria-controls="approfondisci-collapse"
+        >
+          APPROFONDISCI
+        </a>
+        <div class="collapse show" id="approfondisci-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <a 
+          class="item mb-4" 
+          role="button" 
+          data-toggle="collapse" 
+          href="#avvocato-collapse" 
+          aria-expanded="true" 
+          aria-controls="avvocato-collapse"
+        >
+          SEI UN AVVOCATO
+        </a>
+        <div class="collapse show" id="avvocato-collapse">
+          <div class="open-items mt-n1 ml-4 d-flex flex-column">
+          </div>
+        </div>
+
+        <div class="line py-2"></div>
+
+        <button type="button" class="btn mt-5 mb-5">Deposita Aderisci</button>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="d-none d-lg-block">
+    <nav id="nav" class="container-fluid d-flex justify-content-center">
+      <div class="row">
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"   
+            role="button" 
+            data-toggle="collapse" 
+            href="#cosa-mediazione" 
+            aria-expanded="false" 
+            aria-controls="cosa-mediazione"
+          >COSA È LA MEDIAZIONE</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"  
+            role="button" 
+            data-toggle="collapse" 
+            href="#quanto-costa" 
+            aria-expanded="false" 
+            aria-controls="quanto-costa"
+          >QUANTO COSTA</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"   
+            role="button" 
+            data-toggle="collapse" 
+            href="#approfondisci" 
+            aria-expanded="false" 
+            aria-controls="approfondisci"
+          >APPROFONDISCI</a>
+        </div>
+        <div class="column d-flex justify-content-center col-lg-3 col-md-3">
+          <a class="nav-link"    
+            role="button" 
+            data-toggle="collapse" 
+            href="#sei-avvocato" 
+            aria-expanded="false" 
+            aria-controls="sei-avvocato"
+          >SEI UN AVVOCATO</a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section id="nav-collapse">
+    <div class="container-fluid d-flex justify-content-center">
+
+      <div id="quanto-costa" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="cosa-mediazione" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="approfondisci" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="sei-avvocato" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--PAGE-->
+
+  <main>
+    <section id="upper-container" class="d-flex">
+      <div class="container-fluid d-flex align-items-center">
+        <div class="container-left d-flex">
+          <div class="lines"></div>
+          <div class="text d-flex flex-column justify-content-between">
+            <p class="mb-n2">Sedi: Roma</p>
+            <h1 class="mb-n2">Organismo di Mediazione di Roma</h1>
+            <p>
+              Scopri come depositare e ricevere supporto nella Mediazione Civile a Roma.
+            </p>
+            <div class="contacts-container d-flex mb-3">
+              <div class="icons-col mb-5 mr-3 mr-sm-4 py-2 d-flex flex-column justify-content-between align-items-center">
+                <svg class="mb-4" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.8446 11.9783C16.7346 11.9533 16.6196 11.9333 16.4995 11.9333C16.4945 11.9333 16.4895 11.9333 16.4845 11.9333C14.7791 11.7183 13.1886 11.1531 11.7832 10.3029L9.60265 12.5335C7.9922 11.4482 6.59682 9.99778 5.51152 8.49737H5.50152H5.50652L7.68712 6.26674C6.83688 4.86135 6.27173 3.24091 6.05667 1.54044C6.05667 1.53543 6.05667 1.52042 6.05667 1.51542C6.05667 1.39539 6.04167 1.27536 6.01166 1.16533C5.85661 0.500147 5.26145 0 4.55125 0H2.95081H1.50542C0.685189 0 0.0250069 0.655183 0.00500137 1.47041C0.00500137 1.48041 0 1.49542 0 1.50542C0 1.59045 0.0100027 1.67547 0.0250069 1.7605C0.340094 5.04141 1.52542 8.05224 3.34092 10.5729C4.47623 12.1434 5.85662 13.5237 7.42705 14.6591C9.95274 16.4796 12.9636 17.6599 16.2345 17.975C16.3195 17.99 16.4045 18 16.4945 18C16.5096 18 16.5196 17.995 16.5296 17.995C17.3448 17.975 18 17.3148 18 16.4946V15.0492V13.4437C18.005 12.7285 17.5098 12.1334 16.8446 11.9783Z"/>
+                </svg>
+                <svg class="mb-4 mt-2 mt-sm-0" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 0.4C16 0.18 15.82 0 15.6 0H0.4C0.18 0 0 0.18 0 0.4V1.504L8 5.504L16 1.504V0.4Z"/>
+                  <path d="M16 3.29602L8 7.29602L0 3.29602V10.8C0 11.02 0.18 11.2 0.4 11.2H15.6C15.82 11.2 16 11.02 16 10.8V3.29602Z"/>
+                </svg>
+                <svg class="mb-1 mt-1 mt-sm-0" width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.9276 9.39761C17.6312 8.99569 17.4938 8.5048 17.4944 8.00871C17.4944 8.00583 17.4944 8.00295 17.4944 8.00002C17.4944 3.58174 13.8438 0 9.34053 0C8.35539 0 7.41145 0.172024 6.53734 0.486404C6.06446 0.656463 5.54643 0.689149 5.06162 0.555159C4.63338 0.436804 4.17592 0.386883 3.70201 0.418884C1.71129 0.553285 0.108641 2.15398 0.00548225 4.10916C-0.0437675 5.04237 0.24148 5.90807 0.753455 6.60239C1.04984 7.00431 1.1872 7.4952 1.18659 7.99129C1.18659 7.99417 1.18659 7.99705 1.18659 7.99998C1.18659 12.4183 4.83718 16 9.34048 16C10.3257 16 11.2696 15.828 12.1437 15.5136C12.6165 15.3435 13.1346 15.3109 13.6194 15.4448C14.0476 15.5632 14.505 15.6131 14.979 15.5811C16.9697 15.4467 18.5723 13.8461 18.6755 11.8909C18.7248 10.9577 18.4395 10.092 17.9276 9.39761ZM9.63901 6.56577C11.2831 6.94936 13.7676 7.52902 13.7676 10.2141C13.7676 11.5368 13.1037 12.5458 11.8981 13.0552C11.0378 13.4187 10.0641 13.4678 9.22507 13.4678C6.64675 13.4678 5.01829 11.5008 4.95022 11.417C4.52798 10.8974 4.61488 10.1403 5.14451 9.72603C5.67401 9.31158 6.44569 9.39706 6.86802 9.91652C6.8718 9.92095 7.84566 11.0183 9.22507 11.0612C10.8861 11.1129 11.2657 10.628 11.3147 10.2141C11.3747 9.70861 10.9163 9.3375 9.0714 8.90705C7.50762 8.54215 5.14414 7.99074 5.14414 5.5179C5.14414 4.74784 5.46336 2.23526 9.57117 2.23526C12.165 2.23526 13.696 4.23889 13.7599 4.3242C14.1611 4.85965 14.044 5.61285 13.4982 6.00641C12.9548 6.39827 12.192 6.28613 11.7893 5.75717C11.7604 5.72073 10.884 4.76411 9.57117 4.64182C8.57779 4.54925 7.59698 4.9007 7.59698 5.41989C7.59698 5.96997 7.87864 6.15502 9.63901 6.56577Z"/>
+                </svg>
+                <svg class="mt-n2" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.9495 2.187C9.21559 -0.729 4.78441 -0.729 2.05046 2.187C-0.683487 5.103 -0.683487 9.8325 2.05046 12.7485L7.00219 18L11.9495 12.7485C14.6835 9.8325 14.6835 5.103 11.9495 2.187ZM7.00219 9.45C5.79488 9.45 4.81503 8.442 4.81503 7.2C4.81503 5.958 5.79488 4.95 7.00219 4.95C8.2095 4.95 9.18935 5.958 9.18935 7.2C9.18935 8.442 8.2095 9.45 7.00219 9.45Z"/>
+                </svg>
+              </div>
+              <div class="media-col mr-3 mr-sm-4 d-flex flex-column justify-content-between">
+                <div class="mb-3 mb-sm-0 d-flex flex-column">
+                  <span>Tel:</span>
+                  <span>Fax:</span>
+                </div>
+                <div class="mb-2 mb-sm-0 d-flex flex-column">
+                  <span>E-mail:</span>
+                  <span>Pec:</span>
+                </div>
+                <span>Skype:</span>
+                <span class="mb-4 mb-sm-3 pb-2">Indirizzo:</span>
+                <div class="d-flex flex-column">
+                  <span class="mb-4 mb-sm-0 text-nowrap">Per accedere:</span>
+                  <span class="text-nowrap">Orari apertura:</span>
+                </div>
+              </div>
+              <div class="numbers-col ml-n2 d-flex flex-column justify-content-between">
+                <div class="mb-1 d-flex flex-column">
+                  <span>06.56568694</span>
+                  <span>800.134913</span>
+                </div>
+                <div class="mb-sm-0 d-flex flex-column">
+                  <span>info@101mediatori.it</span>
+                  <span>info@pec.101mediatori.it</span>
+                </div>
+                <span class="mb-n3 mb-sm-0">roma.101mediatori</span>
+                <span>via Fulcieri Paulucci de Calboli, 5, 00195 Roma</span>
+                <div class="d-flex flex-column">
+                  <span>4 piano - 101Mediatori / Sabema</span>
+                  <span>Aperti al pubblico dal lunedì al venerdì 9-13 e 14-18.</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn">Deposita istanza qui</button>
+          </div>
+        </div>
+      </div>
+      <div class="map text-right d-none d-xl-block">
+        <img src="Images/map.png" alt="header-image">
+        <span>Click on the map to enhance</span>
+      </div>
+    </section>
+
+
+    <div class="py-5 mt-4 mid-text d-flex align-items-center">
+      <div></div>
+      <p>Chi sono i Mediatori di Roma</p>
+    </div>
+
+    <p class="mid-title">Resposabili di Sedi</p>
+
+    <div id="solo-card-container" class="container-fluid d-flex justify-content-center">
+      <div class="solo-card d-flex justify-content-start">
+        <div class="mx-lg-2 mb-4 grid-card d-flex"> 
+          <div class="card-image">
+            <img src="Images/grid-photo1.png" alt="mediatore">
+          </div>
+          <div class="card-info d-flex flex-column justify-content-around">
+            <h3>Avv. Daniela DE VITA</h3>
+            <p>Milano</p>
+            <div class="grade d-flex align-items-center">
+              <div class="stars">
+                <img src="Images/grade-star.svg" alt="grade-star">
+                <img src="Images/grade-star.svg" alt="grade-star">
+                <img src="Images/grade-star.svg" alt="grade-star">
+                <img src="Images/grade-star.svg" alt="grade-star">
+                <img src="Images/grade-star.svg" alt="grade-star">
+              </div>
+              <p>4.9</p>
+            </div>
+            <p class="about">
+              Mediatore competente, disponibile e pronta all'ascolto delle esigenze delle parti. 
+              Qualità già apprezzate in precedenza e confermate in questa occasione.
+            </p>
+            <a href="#" class="mb-n1 profile-link d-flex align-items-center justify-content-end" d-flex align-items-center justify-content-end">
+              Vedi profile
+              <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <p class="mid-title mt-4">Mediatori - Roma</p>
+
+  <section id="grid" class="d-flex justify-content-center">
+    <div class="row justify-content-start">
+
+      <div class="mx-lg-2 mb-4 grid-card d-flex">   
+        <div class="card-image">
+          <img src="Images/grid-photo1.png" alt="mediatore">
+        </div>
+        <div class="card-info d-flex flex-column justify-content-around">
+          <h3>Avv. Daniela DE VITA</h3>
+          <p>Milano</p>
+          <div class="grade d-flex align-items-center">
+            <div class="stars">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+            </div>
+            <p>4.9</p>
+          </div>
+          <p class="about">
+            Mediatore competente, disponibile e pronta all'ascolto delle esigenze delle parti. 
+            Qualità già apprezzate in precedenza e confermate in questa occasione.
+          </p>
+          <a href="#" class="mb-n1 profile-link d-flex align-items-center justify-content-end" d-flex align-items-center justify-content-end">
+            Vedi profile
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mx-lg-2 mb-4 grid-card d-flex">
+        <div class="card-image">
+          <img src="Images/grid-photo2.png" alt="mediatore">
+        </div>
+        <div class="card-info d-flex flex-column justify-content-around">
+          <h3>Avv.Rocco VICINO</h3>
+          <p>Milano</p>
+          <div class="grade d-flex align-items-center">
+            <div class="stars">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+            </div>
+            <p>4.7</p>
+          </div>
+          <p class="about">
+            il collega Vicino si è speso con grande competenza ed impegno ed ha contribuito in misura determinante 
+            alla conclusione dell'accordo tra le parti. Il mio giudizio...
+          </p>
+          <a href="#" class="mb-n1 profile-link d-flex align-items-center justify-content-end">
+            Vedi profile
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mx-lg-2 mb-4 grid-card d-flex">
+        <div class="card-image">
+          <img src="Images/grid-photo3.png" alt="mediatore">
+        </div>
+        <div class="card-info d-flex flex-column justify-content-around">
+          <h3>Avv. Maria Lina GUARINO</h3>
+          <p>Milano</p>
+          <div class="grade d-flex align-items-center">
+            <div class="stars">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+            </div>
+            <p>4.7</p>
+          </div>
+          <p class="about">
+            La avv. Guarino è già stata incontrata in precedenti mediazioni. 
+            Molto professionale e, se si può aggiungere, molto umana.
+          </p>
+          <a href="#" class="mb-n1 profile-link d-flex align-items-center justify-content-end">
+            Vedi profile
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="mx-lg-2 mb-4 grid-card d-flex">
+        <div class="card-image">
+          <img src="Images/grid-photo4.png" alt="mediatore">
+        </div>
+        <div class="card-info d-flex flex-column justify-content-around">
+          <h3>Dott.Anna CASALI</h3>
+          <p>Milano</p>
+          <div class="grade d-flex align-items-center">
+            <div class="stars">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+            </div>
+            <p>4.9</p>
+          </div>
+          <p class="about">
+            Laureata in giurisprudenza a Milano. Ho maturato un’esperienza decennale in ambito notarile, con 
+            specializzazione in materia successoria, immobiliare e tutela di incapaci.
+          </p>
+          <a href="#" class="mb-n1 profile-link d-flex align-items-center justify-content-end">
+            Vedi profile
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="mx-lg-2 mb-4 grid-card d-flex">
+        <div class="card-image">
+          <img src="Images/grid-photo5.png" alt="mediatore">
+        </div>
+        <div class="card-info d-flex flex-column justify-content-around">
+          <h3>Prof. Avv. Maurizio BOCCHIOLA</h3>
+          <p>Milano</p>
+          <div class="grade d-flex align-items-center">
+            <div class="stars">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+              <img src="Images/grade-star.svg" alt="grade-star">
+            </div>
+            <p>4.5</p>
+          </div>
+          <p class="about">
+            Mediatore competente, disponibile e pronta all'ascolto delle esigenze delle parti. 
+            Qualità già apprezzate in precedenza e confermate in questa occasione.
+          </p>
+          <a href="#" class="mb-n1 profile-link d-flex align-items-center justify-content-end">
+            Vedi profile
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="mid-text py-4 my-4 d-flex align-items-center">
+    <div></div>
+    <p class="mb-0">Le opinioni dei nostri clienti di Roma</p>
+  </div>
+
+  <section id="opinion-cards" class="d-flex justify-content-center">
+    <div class="link-container d-flex flex-column">
+      <div class="cards-container row d-flex justify-content-center">
+        <div class="cards d-flex flex-column justify-content-between">
+          <div class="rate mb-1 d-flex align-items-center">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <span class="ml-2">5.0</span>
+          </div>
+          <p class="date">Inviata il: 07/10/2020</p>
+          <div class="text d-flex align-items-start">
+            <img class="mr-1" src="Images/quote-icon.svg" alt="quote">
+            <p>
+              Ancora una volta esperienza positiva, l'Avv. Calabrò si è confermata un mediatore competente ed equilibrato.”
+            </p>
+          </div>
+          <p class="name align-self-end">Avvocato Luca Carbone da Roma</p>
+        </div>
+  
+        <div class="cards d-flex flex-column justify-content-between">
+          <div class="rate mb-1 d-flex">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <span class="ml-2">5.0</span>
+          </div>
+          <p class="date">Inviata il: 07/10/2020</p>
+          <div class="text d-flex align-items-start">
+            <img class="mr-1" src="Images/quote-icon.svg" alt="quote">
+            <p>
+              Ancora una volta esperienza positiva, l'Avv. Calabrò si è confermata un mediatore competente ed equilibrato.”
+            </p>
+          </div>
+          <p class="name align-self-end">Avvocato Luca Carbone da Roma</p>
+        </div>
+  
+        <div class="cards d-flex flex-column justify-content-between">
+          <div class="rate mb-1 d-flex">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <img src="Images/grade-star.svg" alt="grade-star">
+            <span class="ml-2">5.0</span>
+          </div>
+          <p class="date">Inviata il: 07/10/2020</p>
+          <div class="text d-flex align-items-start">
+            <img class="mr-1" src="Images/quote-icon.svg" alt="quote">
+            <p>
+              Ancora una volta esperienza positiva, l'Avv. Calabrò si è confermata un mediatore competente ed equilibrato.”
+            </p>
+          </div>
+          <p class="name align-self-end">Avvocato Luca Carbone da Roma</p>
+        </div>
+      </div>
+
+      <a class="link align-self-end mt-1 mr-2">Vedi tutto 🡢</a>
+    </div>
+  </section>
+    
+
+
+    <!--FOOTER-->
+    
+    <section id="footer" class="d-flex flex-column justify-content-between">
+      <div class="row contacts align-items-start justify-content-around ">
+        
+        <div class="mx-4 my-2 phone-adress">
+          <p class="m-0">Tel 800.910676</p>
+          <span>Siamo a tua disposizione dal lun<br> al ven; 9-13 e 15-19</span>
+        </div>
+
+        <div class="mx-4 my-2 social">
+          <p class="mt-0">Resta Connesso</p>
+          <div class="icons d-flex justify-content-between align-items-center">
+            <a href="#">
+              <img class="facebook-icon"src="Images/facebookIcon.svg" alt="facebook-icon">
+            </a>
+            <a href="#">
+              <img class="linkedin-icon" src="Images/linkedin-icon.svg" alt="linkedin-icon">
+            </a>
+            <a href="#">
+              <img class="youtube-icon" src="Images/youtube-icon.svg" alt="youtube-icon">
+            </a>
+          </div>   
+        </div>
+
+      <div class="mx-4 my-2 newsletter">
+        <p class="mt-0">Inscriviti alla newsletter</p>
+        <div class="flex-column flex-sm-row input-button d-flex">
+          <input placeholder="Inserisci il tuo indirizzo email" type="text">
+          <button type="button" class="btn">Inscriviti</button>
+        </div>
+      </div>
+  
+      </div>
+      <p class="register my-3 mx-4">
+        © 2011-2020 - 101Mediatori.it | Gruppo101 srl, iscritto al nr 
+        294 degli Organismi di mediazione e al nr 374 degli Enti di formazione | 
+        P.IVA 03952990756
+      </p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  </main>
+</body>
+</html>

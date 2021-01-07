@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
-  <title>Mediatori</title>
+  <title>Mediatori profile</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <div class="d-lg-none">
           <div class="collapsed-menu d-flex align-items-center justify-content-end">
 
-            <div class="contact-icons d-flex">
+            <div class="contact-icons d-flex align-items-center">
               <svg class="user-icon contact-icons icons mr-4" 
                 data-toggle="collapse" 
                 href="#user-collapse" 
@@ -48,19 +48,20 @@
               <a class="collapse ml-n3 mr-2" id="location-collapse">Sedi</a>
 
               <a href="#">
-                <svg class="phone-icon contact-icons icons mr-3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="phone-icon contact-icons icons mr-3" width="18" height="17" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.8446 11.9783C16.7346 11.9533 16.6196 11.9333 16.4995 11.9333C16.4945 11.9333 16.4895 11.9333 16.4845 11.9333C14.7791 11.7183 13.1886 11.1531 11.7832 10.3029L9.60265 12.5335C7.9922 11.4482 6.59682 9.99778 5.51152 8.49737H5.50152H5.50652L7.68712 6.26674C6.83688 4.86135 6.27173 3.24091 6.05667 1.54044C6.05667 1.53543 6.05667 1.52042 6.05667 1.51542C6.05667 1.39539 6.04167 1.27536 6.01166 1.16533C5.85661 0.500147 5.26145 0 4.55125 0H2.95081H1.50542C0.685189 0 0.0250069 0.655183 0.00500137 1.47041C0.00500137 1.48041 0 1.49542 0 1.50542C0 1.59045 0.0100027 1.67547 0.0250069 1.7605C0.340094 5.04141 1.52542 8.05224 3.34092 10.5729C4.47623 12.1434 5.85662 13.5237 7.42705 14.6591C9.95274 16.4796 12.9636 17.6599 16.2345 17.975C16.3195 17.99 16.4045 18 16.4945 18C16.5096 18 16.5196 17.995 16.5296 17.995C17.3448 17.975 18 17.3148 18 16.4946V15.0492V13.4437C18.005 12.7285 17.5098 12.1334 16.8446 11.9783Z"/>
                 </svg>
               </a>
             </div>
             
-            <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="false">
+            <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="false">
               <svg class="expand-icon icons" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23 0H12V2.84211H23V0Z"/>
                 <path d="M23 7.57898H0V10.4211H23V7.57898Z"/>
                 <path d="M23 15.1578H5V17.9999H23V15.1578Z"/>
               </svg>
             </div>
+
           </div>
         </div>
 
@@ -81,9 +82,13 @@
   
   <!--NAV-->
 
-  <div class="collapse" id="navbarResponsive">
+  <nav class="collapse" id="navbarResponsive">
     <div id="small-nav">
-      <div class="navbar-toggler p-3 mb-3 container-fluid d-flex justify-content-end" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="conteudoNavbarSuportado" aria-expanded="true">
+      <div class="navbar-toggler p-3 mb-3 container-fluid d-flex justify-content-end" 
+        data-toggle="collapse" 
+        data-target="#navbarResponsive" 
+        aria-controls="conteudoNavbarSuportado" 
+        aria-expanded="true">
         <img src="Images/close-icon.svg" alt="close-icon">
       </div>
       <div class="nav-items d-flex flex-column">
@@ -173,35 +178,190 @@
 
       </div>
     </div>
-  </div>
+  </nav>
 
-  <div class="d-none d-lg-block">
+  <section class="d-none d-lg-block">
     <nav id="nav" class="container-fluid d-flex justify-content-center">
       <div class="row">
         <div class="column d-flex justify-content-center col-lg-3 col-md-3">
-          <a class="nav-link" href="#">COSA È LA MEDIAZIONE</a>
+          <a class="nav-link"   
+            role="button" 
+            data-toggle="collapse" 
+            href="#cosa-mediazione" 
+            aria-expanded="false" 
+            aria-controls="cosa-mediazione"
+          >COSA È LA MEDIAZIONE</a>
         </div>
         <div class="column d-flex justify-content-center col-lg-3 col-md-3">
-          <a class="nav-link" href="#">QUANTO COSTA</a>
+          <a class="nav-link"  
+            role="button" 
+            data-toggle="collapse" 
+            href="#quanto-costa" 
+            aria-expanded="false" 
+            aria-controls="quanto-costa"
+          >QUANTO COSTA</a>
         </div>
         <div class="column d-flex justify-content-center col-lg-3 col-md-3">
-          <a class="nav-link" href="#">APPROFONDISCI</a>
+          <a class="nav-link"   
+            role="button" 
+            data-toggle="collapse" 
+            href="#approfondisci" 
+            aria-expanded="false" 
+            aria-controls="approfondisci"
+          >APPROFONDISCI</a>
         </div>
         <div class="column d-flex justify-content-center col-lg-3 col-md-3">
-          <a class="nav-link" href="#">SEI UN AVVOCATO</a>
+          <a class="nav-link"    
+            role="button" 
+            data-toggle="collapse" 
+            href="#sei-avvocato" 
+            aria-expanded="false" 
+            aria-controls="sei-avvocato"
+          >SEI UN AVVOCATO</a>
         </div>
       </div>
     </nav>
-  </div>
+  </section>
+
+  <section id="nav-collapse">
+    <div class="container-fluid d-flex justify-content-center">
+
+      <div id="quanto-costa" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="cosa-mediazione" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="approfondisci" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="sei-avvocato" class="collapse">
+        <div class="nav-collapse-container">
+          <div class="question d-flex align-content-center">
+            <img class="mr-2" src="Images/question-icon.svg" alt="question">
+            <p>Scopri quanto costa una mediazione?<span class="px-2">🡢</span></p>
+          </div>
+          <div class="line mb-3"></div>
+          <div class="menu">
+            <div>
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="mid-col">
+              <p class="item">come e quando si paga</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div class="end-col">
+              <p class="item">PREVENTIVO ONLINE</p>
+              <p class="sub-item">Seleziona la sede ed il valore della tua pratica</p>
+            </div>
+            <div>
+              <p class="item">tabella</p>
+              <p class="sub-item">I nostri costi</p>
+            </div>
+            <div class="mid-col">
+              <p class="item ">promozioni</p>
+              <p class="sub-item">Un motivo in più per affidarci le tue </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <!--PAGE-->
 
   <main>
-    <section id="upper-container">
-      <div class="map text-right d-none d-xl-block">
-        <img src="Images/map.png" alt="header-image">
-        <span>Click on the map to enhance</span>
-      </div>
+    <section id="upper-container" class="d-flex">
+
       <div class="container-fluid d-flex align-items-center">
         <div class="container-left d-flex">
           <div class="lines"></div>
@@ -251,70 +411,64 @@
           </div>
         </div>
       </div>
+      <div class="map text-right d-none d-xl-block">
+        <img src="Images/map.png" alt="header-image">
+        <span>Click on the map to enhance</span>
+      </div>
     </section>
 
-    <div id="central-texts"">
-      <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
-        <div></div>
-        <p class="mb-0">Scopri come depositare e ricevere supporto nella Mediazione Civile a Chieti</p>
-      </div>
-  
-      <p class="texts">101Mediatori, Organismo di Mediazione, offre il servizio di 
-        <strong>gestione della procedura di mediazione civile</strong> 
-        e commerciale nella sede di Chieti accreditata in forza di accordo ex art. 7 DM 180/2010. Grazie all'intervento di un mediatore imparziale e competente si potranno risolvere i contrasti tra le parti in maniera celere ed economica all'interno della sede dell'Organismo di mediazione di Chieti. Il mediatore agevola il dialogo tra le parti in lite quindi non è un giudice o un arbitro, non giudica né emette una sentenza ma, essendo un esperto conoscitore delle dinamiche di gestione dei conflitti crea un tavolo di lavoro sereno e produttivo che permette di individuare ed analizzare le varie strade per superare il conflitto in modo che entrambe le parti ne escano avvantaggiate. Anche nell'Organismo di mediazione di Chieti, al termine della mediazione civile non vi saranno ne vinti ne vincitori ma solo delle parti che hanno deciso di affrontare il conflitto, gestirlo e infine dominarlo e guidarlo per condurlo ad un accordo reciprocamente soddisfacente.<br><br>
-        <strong>Per informazioni sul sull'Organismo di Mediazione di Chieti contattare il numero verde o inviare una richiesta email.</strong> 
-      </p>
-    </div>
-
-    <div id="central-texts"">
-      <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
-        <div></div>
-        <p class="mb-0">Organismo di Mediazione Chieti</p>
-      </div>
-  
-      <p class="texts"><strong>Mediatori:</strong> nella sede dell'Organismo di Mediazione Chieti, trovi mediatori civili professionisti con anni di esperienza, regolarmente iscritti nell’albo dei mediatori civili del ministero della giustizia, e formati nel rispetto degli elevati standard professionali richiesti.<br><br>
-        Grazie alla frequenza periodica di corsi di formazione ed aggiornamento, i mediatori garantiscono sempre più elevate percentuali di successo.<br><br> 
-        L'Organismo di Mediazione di Chieti convenzionato ex art 7 con 101Mediatori svolge il servizio di Mediazione civile nell’ambito della competenza territoriale del Tribunale di Chieti 
-      </p>
-    </div>
-
-    <div id="central-texts"">
-      <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
-        <div></div>
-        <p class="mb-0">La Mediazione Civile</p>
-      </div>
-  
-      <p class="texts pb-3 pb-xl-5">Il 21 marzo 2011 è entrata in vigore la riforma che introduce anche in Italia il sistema della Mediazione Civile.<br><br>
-        <strong>Obiettivo:</strong> offrire al cittadino uno strumento semplice e veloce per risolvere le controversie con costi contenuti e certi.<br><br>
-        
-        La mediazione è l’attività professionale finalizzata ad assistere due o più soggetti nella ricerca di un accordo amichevole.<br><br>
-        
-        In pratica, la mediazione civile è tutto questo: due o più parti, assistite dai rispettivi avvocati, si incontrano presso un Organismo di Mediazione accreditato dal Ministero della Giustizia per cercare un accordo attraverso il fondamentale intervento del Mediatore Professionista, accuratamente formato e preparato per aiutare le parti nella ricerca di una soluzione conveniente per entrambe.<br><br> 
-
-        La mediazione costituisce la migliore e unica alternativa alle lunghe e costosissime cause in Tribunale, dove spesso, dopo anni di udienze, tutti si sentono sconfitti e nessuno vincitore.
-      </p>
-    </div>
-
+    <section></section>
+      <div class="central-texts"">
+        <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
+          <div></div>
+          <p class="mb-0">Scopri come depositare e ricevere supporto nella Mediazione Civile a Chieti</p>
+        </div>
     
-
+        <p class="texts">101Mediatori, Organismo di Mediazione, offre il servizio di 
+          <strong>gestione della procedura di mediazione civile</strong> 
+          e commerciale nella sede di Chieti accreditata in forza di accordo ex art. 7 DM 180/2010. Grazie all'intervento di un mediatore imparziale e competente si potranno risolvere i contrasti tra le parti in maniera celere ed economica all'interno della sede dell'Organismo di mediazione di Chieti. Il mediatore agevola il dialogo tra le parti in lite quindi non è un giudice o un arbitro, non giudica né emette una sentenza ma, essendo un esperto conoscitore delle dinamiche di gestione dei conflitti crea un tavolo di lavoro sereno e produttivo che permette di individuare ed analizzare le varie strade per superare il conflitto in modo che entrambe le parti ne escano avvantaggiate. Anche nell'Organismo di mediazione di Chieti, al termine della mediazione civile non vi saranno ne vinti ne vincitori ma solo delle parti che hanno deciso di affrontare il conflitto, gestirlo e infine dominarlo e guidarlo per condurlo ad un accordo reciprocamente soddisfacente.<br><br>
+          <strong>Per informazioni sul sull'Organismo di Mediazione di Chieti contattare il numero verde o inviare una richiesta email.</strong> 
+        </p>
+      </div>
+  
+      <div class="central-texts"">
+        <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
+          <div></div>
+          <p class="mb-0">Organismo di Mediazione Chieti</p>
+        </div>
+    
+        <p class="texts"><strong>Mediatori:</strong> nella sede dell'Organismo di Mediazione Chieti, trovi mediatori civili professionisti con anni di esperienza, regolarmente iscritti nell’albo dei mediatori civili del ministero della giustizia, e formati nel rispetto degli elevati standard professionali richiesti.<br><br>
+          Grazie alla frequenza periodica di corsi di formazione ed aggiornamento, i mediatori garantiscono sempre più elevate percentuali di successo.<br><br> 
+          L'Organismo di Mediazione di Chieti convenzionato ex art 7 con 101Mediatori svolge il servizio di Mediazione civile nell’ambito della competenza territoriale del Tribunale di Chieti 
+        </p>
+      </div>
+  
+      <div class="central-texts"">
+        <div class="py-5 mt-2 mb-0 mid-text d-flex align-items-center">
+          <div></div>
+          <p class="mb-0">La Mediazione Civile</p>
+        </div>
+    
+        <p class="texts pb-3 pb-xl-5">Il 21 marzo 2011 è entrata in vigore la riforma che introduce anche in Italia il sistema della Mediazione Civile.<br><br>
+          <strong>Obiettivo:</strong> offrire al cittadino uno strumento semplice e veloce per risolvere le controversie con costi contenuti e certi.<br><br>
+          
+          La mediazione è l’attività professionale finalizzata ad assistere due o più soggetti nella ricerca di un accordo amichevole.<br><br>
+          
+          In pratica, la mediazione civile è tutto questo: due o più parti, assistite dai rispettivi avvocati, si incontrano presso un Organismo di Mediazione accreditato dal Ministero della Giustizia per cercare un accordo attraverso il fondamentale intervento del Mediatore Professionista, accuratamente formato e preparato per aiutare le parti nella ricerca di una soluzione conveniente per entrambe.<br><br> 
+  
+          La mediazione costituisce la migliore e unica alternativa alle lunghe e costosissime cause in Tribunale, dove spesso, dopo anni di udienze, tutti si sentono sconfitti e nessuno vincitore.
+        </p>
+      </div>
+    </section>
+    
     <!--FOOTER-->
-
-    
     
     <section id="footer" class="d-flex flex-column justify-content-between">
-      <div id="map-footer" class="d-xl-none mt-5">
-        <div class="mid-text py-5 mb-0 d-flex align-items-center">
-          <div></div>
-          <p class="mb-0">Where to find us</p>
-        </div>
-        <img class="map-image" src="Images/map.png" alt="map-image">
-      </div>
-
-      <div class="row contacts align-items-start justify-content-center ">
+      <div class="row contacts align-items-start justify-content-around ">
         
         <div class="mx-4 my-2 phone-adress">
           <p class="m-0">Tel 800.910676</p>
-          <span>Siamo a tua disposizione dal lun al ven; 9-13 e 15-19</span>
+          <span>Siamo a tua disposizione dal lun<br> al ven; 9-13 e 15-19</span>
         </div>
 
         <div class="mx-4 my-2 social">
@@ -336,7 +490,7 @@
         <p class="mt-0">Inscriviti alla newsletter</p>
         <div class="flex-column flex-sm-row input-button d-flex">
           <input placeholder="Inserisci il tuo indirizzo email" type="text">
-          <button type="button" class="btn">Cerca</button>
+          <button type="button" class="btn">Inscriviti</button>
         </div>
       </div>
   
@@ -352,3 +506,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
   </main>
 </body>
+</html>

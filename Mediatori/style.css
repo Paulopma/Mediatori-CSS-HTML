@@ -1,16 +1,17 @@
 html, body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
+  background-color: #F9F9F9;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 /*general classes---------------------------*/
 
 .placeholder-text::placeholder {
   font-family: 'Open-Sans', sans-serif;
-}
-
-.placeholder-text::placeholder {
-  font-family: 'Open-Sans', sans-serif;
+  color: #898989;
 }
 
 .primary-button {
@@ -28,17 +29,64 @@ html, body {
   color: white;
 }
 
+.mid-text {
+  margin-top: 54px;
+  margin-bottom: 30px;
+}
+
+.mid-text div {
+  min-width: 35px;
+  border-bottom: 2px solid #088155;
+}
+
+.mid-text p {
+  color: #088155;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 18px;
+  margin-bottom: 0;
+}
+
 /*header-------------------------------------*/
 
 #header {
-  padding: 9px;
+  height: 82px;
   background-color: white;
   z-index: 10;
 }
 
+#header .container {
+  width: 1200px;
+  margin-top: 10px;
+}
+
+#header .navbar-toggler {
+  border: none;
+}
+
+#header .expand-icon {
+  fill: #088155;
+}
+
+#header .contact-icons {
+  fill: #C4C4C4;
+}
+
+#header .contact-icons a {
+  font-size: 14px;
+  color: #d8831b;
+}
+
+#header .active, #header .icons:hover {
+  fill: #F1931F;
+}
+
+#header .collapsed-menu {
+  height: 40px;
+  width: 200px;
+}
+
 #header .nav-link {
-  margin-left: 20px;
-  margin-top: 2px;
   color: #848484;
 }
 
@@ -54,7 +102,7 @@ html, body {
   color: #086B47;
 }
 
-#header .btn {
+#header .btn, #small-nav .btn {
   height: 45px;
   width: 177px;
   font-size: 14px;
@@ -64,12 +112,49 @@ html, body {
   transition: 0.2;
 }
 
-#header .btn:hover {
+#header .btn:hover, #small-nav .btn {
   background-color: #d8831b;
   color: white;
 }
 
 /*NAV------------------------------------*/
+
+#small-nav {
+  position: absolute;
+  min-height: 120vh;
+  width: 100vw;
+  padding-left: 40px;
+  background-color: #086B47;
+  z-index: 15;
+}
+
+#small-nav .item {
+  color: white;
+}
+
+#small-nav .item .active {
+  color: #F1931F;
+}
+
+#small-nav .open-items .main-items {
+  margin: 0;
+  font-size: 12px;
+  color: #F1931F;
+  text-transform: uppercase;
+}
+
+#small-nav .open-items .sub-items {
+  margin: 0;
+  max-width: 150px;
+  color: white;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 11px;
+}
+
+#small-nav .line {
+  width: 245px;
+  border-bottom: 1px solid white;
+}
 
 #nav {
   background-color: #086B47;
@@ -89,6 +174,58 @@ html, body {
 
 #nav .row .nav-link:hover {
   border-bottom: 4px solid #F1931F;
+}
+
+#nav-collapse .collapse {
+  height: 217px;
+}
+
+#nav-collapse p {
+  margin: 0;
+}
+
+#nav-collapse .question {
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #646464;
+}
+
+#nav-collapse .question span {
+  color: #F1931F;
+}
+
+#nav-collapse .line {
+  width: 690px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+#nav-collapse .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  grid-template-rows: repeat(2, 75px);
+}
+
+#nav-collapse .menu .mid-col {
+  justify-self: center;
+}
+
+#nav-collapse .menu .end-col {
+  justify-self: end;
+}
+
+#nav-collapse .menu .item {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F1931F;
+}
+
+#nav-collapse .menu .sub-item {
+  max-width: 150px;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 11px;
+  color: #848484;
 }
 
 /*PAGE----------------------------*/
@@ -163,13 +300,6 @@ html, body {
 .mid-text {
   padding: 70px 0;
   margin-left: 122px;
-}
-
-.mid-text div {
-  height: 0;
-  width: 35px;
-  background-color: #088155;
-  border: 1px solid #088155;
 }
 
 .mid-text p {
@@ -256,6 +386,7 @@ html, body {
 
 #recomended-container {
   background-color: #F4F4F4;
+  padding-bottom: 71px;
 }
 
 #recomended-container .grid-container .cards {
@@ -320,10 +451,9 @@ html, body {
   right: 20px;
 }
 
-/*FOOTER-------------------------------*/
-
 #footer {
   min-height: 254px;
+  background-color: white;
 }
 
 #footer .contacts {
@@ -403,6 +533,10 @@ html, body {
     margin-left: 50px;
   }
 
+  #upper-container .container-fluid {
+    margin-top: 51px;
+  }
+
   /*PAGE-----------------*/
 
   .mid-text {
@@ -417,9 +551,53 @@ html, body {
     padding: 40px 0;
     margin-left: 100px;
   }
+
+  /*FOOTER--------------*/
+
+  #footer {
+    height: 350px;
+  }
+
+  #footer .newsletter input {
+    height: 40px;
+  }
+
+  #footer .newsletter .btn {
+    width: 115px;
+    height: 40px;
+  }
+
+  #footer .contacts {
+    height: 400px;
+    margin: 40px 0 20px 0;
+  }
+
+  #footer .contacts .phone-adress p {
+    font-size: 20px;
+  }
+
+  #footer .contacts .phone-adress span {
+    font-size: 12px;
+  }
+
+  #footer .contacts .register {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575.98px) {
+  #header {
+    height: 51px;
+  }
+
+  #header .container {
+    margin-top: -2px;
+  }
+
+  #header .navbar-brand img {
+    width: 40px;
+  }
+
   #header .navbar-brand :first-child{
     height: 32px;
   }
@@ -439,6 +617,7 @@ html, body {
   /*PAGE-----------------*/
 
   #upper-container .container-fluid {
+    margin-top: 51px;
     justify-content: center;
     height: 400px;
   }
@@ -472,41 +651,51 @@ html, body {
   }
 
   .grid-card {
-    width: 97vw;
+    height: 250px;
+    border-radius: 0;
+    width: 100vw;
   }
   
   .grid-card .card-image img {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50px;
     height: 100px;
     width: 100px;
   }
   
   .grid-card .card-image .image-badge {
+    margin-left: 20px;
+    font-size: 12px;
     top:-30px;
     height: 30px;
-    width: 100px;
+    width: 80px;
+    border-bottom-right-radius: 10px;
   }
   
   .grid-card .card-info {
     display: flex !important;
-    justify-content: space-between !important;
+    justify-content: space-around !important;
   }
   
   .grid-card .card-info h3 {
     width: 65vw;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: -10px;
   }
   
   .grid-card .card-info .grade {
     margin-top: -10px;
   }
-
   
   .grid-card .card-info .about {
+    margin-top: 20px;
+    font-size: 12px;
     position: relative;
-    left: -100px;
+    left: -90px;
     min-height: 84px;
-    min-width: 90vw;
+    min-width: 85vw;
   }
   
   .grid-card .card-info .profile-link {
@@ -516,13 +705,39 @@ html, body {
 
   /*FOOTER---------------------*/
 
+  #footer {
+    margin-top: 70px;
+    height: 530px;
+  }
+
+  #footer .newsletter input {
+    height: 40px;
+  }
+
   #footer .newsletter .btn {
+    width: 115px;
+    height: 40px;
     margin-top: 5px;
     margin-left: 0px;
   }
 
   #footer .contacts {
-    margin-left: 0px;
-    justify-content: flex-start !important;
+    height: 400px;
+    margin: 30px 0 20px 0;
+
+    flex-direction: column;
+    justify-content: space-between !important;
+  }
+
+  #footer .contacts .phone-adress p {
+    font-size: 20px;
+  }
+
+  #footer .contacts .phone-adress span {
+    font-size: 12px;
+  }
+
+  #footer .contacts .register {
+    font-size: 14px;
   }
 }
