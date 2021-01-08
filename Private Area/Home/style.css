@@ -10,10 +10,6 @@ p {
   color: #3D3D3D;
 }
 
-:root {
-  --gutter: 20px;
-}
-
 /*general classes---------------------------*/
 
 .placeholder-text::placeholder {
@@ -171,6 +167,10 @@ main {
 #page-container .page .table {
   overflow-x: scroll;
   padding-bottom: 100px;
+}
+
+#page-container .page .table p {
+  padding: 0 10px;
 }
 
 #page-container .table .tittle {

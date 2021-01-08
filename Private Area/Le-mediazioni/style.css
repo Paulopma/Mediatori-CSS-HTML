@@ -117,12 +117,16 @@ main {
   padding-bottom: 100px;
 }
 
+#page-container .page .table p {
+  padding: 0 10px;
+}
+
 #page-container .table .tittle {
   width: 1080px;
   margin-bottom: 4px;
   display: grid;
   align-items: center;
-  grid-template-columns: 260px 345px 226px 149px;
+  grid-template-columns: 205px 240px 204px 229px 117px 85px;
   grid-template-rows: 59px;
   background-color: #088155;
   border-radius: 10px 10px 0px 0px;
@@ -136,10 +140,9 @@ main {
 
 #page-container .table .content {
   width: 1080px;
-  margin-bottom: 4px;
   display: grid;
   align-items: center;
-  grid-template-columns: 260px 345px 226px 149px 100px;
+  grid-template-columns: 205px 240px 204px 229px 117px 85px;
   grid-template-rows: 94px;
   background-color: white;
 }
