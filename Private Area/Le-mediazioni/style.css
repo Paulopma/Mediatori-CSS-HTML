@@ -330,6 +330,72 @@ main {
     font-weight: 700;
     color: white;
   }
+
+  #page-container .small-page .select {
+    height: 58px;
+    width: 100%;
+    margin-bottom: 21px;
+    background-color: #088155;
+  }
+  
+  #page-container .small-page .select a {
+    text-align: center;
+    color: white;
+    width: 50%;
+    padding: 20px 0;
+    border-bottom: 2px solid  #088155;
+    text-decoration: none;
+  }
+
+  #page-container .small-page .select .active {
+    border-bottom: 4px solid  #F1931F;
+  }
+
+  #page-container .small-page .mediazioni-cards {
+    width: 100%;
+    min-height: 334px;
+    margin-bottom: 12px;
+    padding: 0 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #page-container .small-page .mediazioni-cards .number {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 17px 0;
+    color: #F1931F;
+    text-decoration: none;
+  }
+
+  #page-container .small-page .mediazioni-cards .line {
+    border-bottom: 0.5px solid #C4C4C4;
+    margin-bottom: 14px;
+  }
+
+  #page-container .small-page .mediazioni-cards .content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    row-gap: 25px;
+  }
+
+  #page-container .small-page .mediazioni-cards .content p {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+
+  #page-container .small-page .mediazioni-cards .content span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+  }
+
+  #page-container .small-page .mediazioni-cards .content .hidden {
+    visibility: collapse;
+  }
 }
 
 @media (max-width: 575.98px) {
