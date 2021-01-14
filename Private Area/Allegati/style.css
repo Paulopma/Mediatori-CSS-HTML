@@ -231,7 +231,100 @@ main {
   color:#088155;
 }
 
+.modal-header {
+  border: none;
+}
 
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-body {
+  height: 502px;
+  width: 484px;
+  padding: 0 50px 50px 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.modal-body .title {
+  margin-top: -10px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.modal-body .subtitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.modal-body .content-text {
+  margin-bottom: 31px;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.modal-body .choose-file {
+  margin-bottom: 40px;
+}
+
+.modal-body .choose-file button {
+  height: 29px;
+  width: 104px;
+  font-size: 14px;
+  padding: 3px;
+  font-weight: bold;
+  color: #20613B;
+  border: 1.5px solid #20613B;
+  border-radius: 5px;
+}
+
+.modal-body input {
+  height: 30px;
+  width: 310px;
+  padding: 0 10px;
+  margin-bottom: 40px;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+}
+
+.modal-body input:focus {
+  border: 1px solid #20613B;
+  outline: none;
+}
+
+.modal-body .send-button {
+  height: 42px;
+  width: 156px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #C1E1CF;
+  color: #20613B;
+}
+
+.modal-body button:hover {
+  background-color: #8fb8a0;
+}
+
+.modal-body button:active {
+  background-color: #C1E1CF;
+}
+
+.modal-body .private-button {
+  width: 201px;
+  background-color: #FAE7CB;
+  color: #744600;
+}
+
+.modal-body .private-button:hover {
+  background-color: #d6c09f;
+}
+
+.modal-body .private-button:active {
+  background-color: #FAE7CB;
+}
 
 /*media queries-----------------------------*/
 

@@ -184,11 +184,21 @@
                 Allegati
               </p>
               <div class="buttons d-flex">
-                <a href="#" class="allegati d-flex justify-content-center align-items-center">
+                <a 
+                  href="#" 
+                  class="allegati d-flex justify-content-center align-items-center"
+                  data-toggle="modal" 
+                  data-target="#allegati-modal"
+                >
                   <img class="mr-2" src="Images/icon-add.svg" alt="allegati">
                   <p>Carica allegati</p>
                 </a>
-                <a href="#" class="private d-flex justify-content-center align-items-center mr-0">
+                <a 
+                  href="#" 
+                  class="private d-flex justify-content-center align-items-center mr-0"
+                  data-toggle="modal" 
+                  data-target="#allegati-modal-private"
+                >
                   <img class="mr-2" src="Images/icon-lock.svg" alt="private">
                   <p>Carica allegati privati</p>
                 </a>
@@ -259,6 +269,74 @@
       </div>
 
     </section>
+    
+    <!-- Modal -->
+
+    <div class="modal fade" id="allegati-modal" tabindex="-1" aria-labelledby="allegati" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body d-flex flex-column">
+            <p class="title">Carica allegati</p>
+            <p class="content-text">
+              Attenzione i file che carichi in questa sezione saranno a disposizione di tutte le parti coinvolte e potranno essere cancellati solo dallo staff.
+            </p>
+            <p class="subtitle">Carica un file</p>
+            <p class="content-text mb-2">
+              Puoi caricare pdf, word, excel, jpeg, gif, zip, png, txt, rtf e p7m.
+            </p>
+            <div class="choose-file d-flex align-items-center">
+              <button type="button" class="btn mr-3">Choose file</button>
+              <p>No file chosen</p>
+            </div>
+            <p class="subtitle">Descrivi il file*:</p>
+            <p class="content-text mb-3">
+              Descrivi il file che desideri allegare e poi clicca su «Carica un file» oppure trascinali qui. 
+            </p>
+            <input type="text">
+            <button type="button" class="btn send-button align-self-start" data-dismiss="modal">Carica allegati</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="allegati-modal-private" tabindex="-1" aria-labelledby="allegati" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body d-flex flex-column">
+            <p class="title">Carica allegati privati</p>
+            <p class="content-text"> 
+              Attenzione i file che carichi in questa sezione saranno a disposizione di tutte le parti coinvolte e potranno essere cancellati solo dallo staff.
+            </p>
+            <p class="subtitle">Carica un file</p>
+            <p class="content-text mb-2">
+              Puoi caricare pdf, word, excel, jpeg, gif, zip, png, txt, rtf e p7m.
+            </p>
+            <div class="choose-file d-flex align-items-center">
+              <button type="button" class="btn mr-3">Choose file</button>
+              <p>No file chosen</p>
+            </div>
+            <p class="subtitle">Descrivi il file*:</p>
+            <p class="content-text mb-3">
+              Descrivi il file che desideri allegare e poi clicca su «Carica un file» oppure trascinali qui. 
+            </p>
+            <input type="text">
+            <button type="button" class="btn send-button private-button align-self-start" data-dismiss="modal">Carica allegati privati</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
   </main>
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
