@@ -167,7 +167,7 @@ main {
   display: grid;
   grid-template-rows: repeat(auto, 100px);
   column-gap: 35px;
-  padding: 44px 40px;
+  padding: 44px 30px;
   background-color: #F9F9F9;
 }
 
@@ -219,29 +219,30 @@ main {
   column-gap: 75px;
 }
 
-#page-container .table-container .table-parte-istante {
+#page-container .table-container .table-big {
   width: 100%;
 }
 
-#page-container .table-container .table-parte-istante .rows {
+#page-container .table-container .table-big .rows {
   margin-bottom: 70px;
   gap: 35px;
 }
 
-#page-container .table-container .table-parte-istante .rows .rows-container {
+#page-container .table-container .table-big .rows .rows-container {
   width: 100%;
 }
 
-#page-container .table-container .table-parte-istante .rows .columns-container {
-  gap: 35px;
-  width: fit-content;
+#page-container .table-container .table-big .rows .columns-container {
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 70px;
 }
 
-#page-container .table-container .table-parte-istante .column-title {
+#page-container .table-container .table-big .column-title {
   min-width: 88px;
 }
 
-#page-container .table-container .table-parte-istante .column {
+#page-container .table-container .table-big .column {
   width: 190px;
 }
 
@@ -273,11 +274,11 @@ main {
     width: calc(100% - 15px);
   }
 
-  #page-container .table-container .table-parte-istante .rows {
+  #page-container .table-container .table-big .rows {
     flex-direction: column;
   }
 
-  #page-container .table-container .table-parte-istante .column-title {
+  #page-container .table-container .table-big .column-title {
     width: 100%;
   }
 } 
@@ -328,6 +329,7 @@ main {
     height: 100vh;
     width: 100vw;
     background-color: #088155;
+    z-index: 100;
   }
 
   #page-container .small-menu .profile p {
@@ -457,6 +459,11 @@ main {
   
   #page-container .table-container .table .title {
     border-radius: 0;
+  }
+
+  #page-container .table-container .table-big .rows .columns-container {
+    flex-wrap: nowrap;
+    width: 900px;
   }
 
   #page-container .table-container .table-contati .content {
