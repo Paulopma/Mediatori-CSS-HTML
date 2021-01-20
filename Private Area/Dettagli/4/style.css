@@ -177,6 +177,7 @@ main {
 }
 
 #page-container .table-container .table .content .subtitle {
+  height: 45px;
   font-size: 16px;
   font-weight: bold;
 }
