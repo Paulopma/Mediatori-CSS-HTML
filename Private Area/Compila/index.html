@@ -61,7 +61,7 @@
     </section>
 
     
-    <section id="page-container" class="w-100 d-flex justify-content-center">
+    <section id="page-container" class="w-100 d-flex flex-column align-items-center pb-5">
       <div class="page">
         <div class="d-md-none">
           <div class="d-flex small-upper-container align-items-end justify-content-between">
@@ -163,8 +163,8 @@
           </div>
         </div>
 
-        <div class="mid-container">
-          <p class="mid-text">
+        <div class="mid-container mb-0">
+          <p class="mid-text mb-5">
             Compila Istanza di Mediazione
           </p>
   
@@ -173,7 +173,7 @@
             <p><strong class="mr-2">2)</strong>Deposita via fax o via pec.</p>
           </div>
   
-          <div class="line"></div>
+          <div class="line my-5"></div>
   
           <div class="upper-selects d-flex justify-content-xl-between">
             <div class="citta">
@@ -242,14 +242,14 @@
         </div>
 
         <div class="mid-container">
-          <div class="line"></div>
+          <div class="line mt-5"></div>
   
-          <p class="mid-text mt-4">
+          <p class="mid-text">
             Parte Istante
           </p>
         </div>
 
-        <div class="table table-orange">
+        <div class="table table-orange mt-0">
           <div class="table-title d-flex align-items-center">
             <p>Inserisci i dati della parte istante</p>
           </div>
@@ -504,7 +504,7 @@
               <div class="rows d-flex justify-content-xl-between flex-wrap">
                 <div class="w-100 d-flex flex-column">
                   <label class="label-black">Note</label>
-                  <textarea name="note" rows="3"></textarea>
+                  <textarea name="note" rows="2"></textarea>
                 </div>
               </div>
 
@@ -536,7 +536,7 @@
           </p>
         </div>
 
-        <div class="table table-green">
+        <div class="table table-green mt-0">
           <div class="table-title d-flex align-items-center">
             <p>Inserisci i dati della parte convenuta</p>
           </div>
@@ -756,7 +756,7 @@
               <div class="rows d-flex justify-content-xl-between flex-wrap">
                 <div class="w-100 d-flex flex-column">
                   <label class="label-black">Note</label>
-                  <textarea name="note" rows="3"></textarea>
+                  <textarea name="note" rows="2"></textarea>
                 </div>
               </div>
             </div>
@@ -764,6 +764,197 @@
           </form>
         </div>
 
+        <div class="mid-container">
+          <div class="line"></div>
+  
+          <p class="mid-text mt-4">
+            Dettagli
+          </p>
+        </div>
+
+        <div class="table table-blue mt-0">
+          <div class="table-title d-flex align-items-center">
+            <p>Inserisci i motivi</p>
+          </div>
+          <form class="content d-flex flex-column">
+            <div class="rows-container">
+              <div class="rows d-flex flex-wrap w-100">
+                <div class="input-full w-100">
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="label-black mb-0 mr-1">Oggetto della controversia *</p>
+                    <img src="Images/icon-question.svg" alt="about">
+                  </div>
+                  <input placeholder="Inserire l'oggetto della mediazione." type="text">
+                  <p class="characters">Caratteri: 0/100</p>
+                </div>
+              </div>
+
+              <div class="rows d-flex flex-wrap w-100">
+                <div class="input-full w-100">
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="label-black mb-0 mr-1">Ragioni della pretesa <span class="sublabel-black">(minimo 300 caratteri)</span> *</p>
+                    <img src="Images/icon-question.svg" alt="about">
+                  </div>
+                  <input placeholder="Inserire l'oggetto della mediazione." type="text">
+                  <p class="characters">Caratteri: 0</p>
+                </div>
+              </div>
+
+              <div class="rows d-flex flex-wrap">
+                <div class="input-small w-100">
+                  <div class="d-flex align-items-center">
+                    <p class="label-black mb-0 mr-1">Valore della controversia *</p>
+                    <img src="Images/icon-question.svg" alt="about">
+                  </div>
+                  <p class="sublabel-black">Indica il valore della controversia (esempio 78525,00)
+                    <br>oppure inserisci 0 per valore indeterminabile:
+                  </p>
+                  <input placeholder="€                   0,00" type="text">
+                </div>
+              </div>
+
+              <div class="rows d-flex flex-wrap mb-0">
+                <div class="input-large">
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="label-black mb-0 mr-1">Foro competente *</p>
+                    <img src="Images/icon-question.svg" alt="about">
+                  </div>
+                  <input placeholder="Inserire il foro di competenza." type="text">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>    
+
+        <div class="mid-container">
+          <div class="line mt-5"></div>
+  
+          <p class="mid-text">
+            Preferenze
+          </p>
+        </div>
+
+        <div class="table table-blue mt-0 mb-4">
+          <div class="table-title d-flex align-items-center">
+            <p>Inserisci i motivi</p>
+          </div>
+          <form class="content d-flex flex-column">
+            <div class="rows d-flex flex-wrap">
+              <div class="column-left">
+                <div class="d-flex align-items-center mb-2">
+                  <p class="label-black mb-0 mr-1">Data del primo incontro di mediazione *</p>
+                  <img src="Images/icon-question.svg" alt="about">
+                </div>
+                <div class="d-flex flex-wrap mb-2 mb-lg-0">
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="label-black-big mr-3">1:</p>
+                    <input class="input-small mr-3" placeholder="Seleziona la data" type="text">
+                  </div>
+                  <select name="orario" class="input-medium">
+                    <option value="label" selected disabled>Seleziona o orario</option>
+                    <option value="label">1:00h</option>
+                    <option value="label">2:00h</option>
+                    <option value="label">3:00h</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-wrap mb-2 mb-lg-0">
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="label-black-big mr-3">2:</p>
+                    <input class="input-small mr-3" placeholder="Seleziona la data" type="text">
+                  </div>
+                  <select name="orario" class="input-medium">
+                    <option value="label" selected disabled>Seleziona o orario</option>
+                    <option value="label">1:00h</option>
+                    <option value="label">2:00h</option>
+                    <option value="label">3:00h</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-wrap mb-2 mb-lg-0">
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="label-black-big mr-3">3:</p>
+                    <input class="input-small mr-3" placeholder="Seleziona la data" type="text">
+                  </div>
+                  <select name="orario" class="input-medium">
+                    <option value="label" selected disabled>Seleziona o orario</option>
+                    <option value="label">1:00h</option>
+                    <option value="label">2:00h</option>
+                    <option value="label">3:00h</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <p class="label-black">Se lo desideri inserisci altre date o richieste sull'incontro:</p>
+                <textarea class="half-text-area" name="date" id="" cols="5" rows="5">Se lo desideri inserisci qui altre date o richieste sull’incontro</textarea>
+              </div>
+            </div>
+
+            <div class="rows column-left">
+              <div class="d-flex flex-wrap ">
+                <div>
+                  <div class="d-flex align-items-center mb-2">
+                    <p class="label-black mb-0 mr-1">Scelta del mediatore *</p>
+                    <img src="Images/icon-question.svg" alt="about">
+                  </div>
+                  <select name="scelta" class="input-large">
+                    <option value="label" selected disabled>Seleziona</option>
+                    <option value="label">1:00h</option>
+                    <option value="label">2:00h</option>
+                    <option value="label">3:00h</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="rows column-left">
+              <div>
+                <p class="label-black mb-0 mr-1">Preferenze per il pagamento *</p>
+                <p class="sublabel-black">Vuoi effettuare il versamento dei diritti di segreteria il giorno del primo incontro?</p>
+                <select name="scelta" class="input-large">
+                  <option value="label" selected disabled>Seleziona</option>
+                  <option value="label">1:00h</option>
+                  <option value="label">2:00h</option>
+                  <option value="label">3:00h</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="rows">
+              <div>
+                <p class="label-black mb-0 mr-1">Se il convenuto non aderisce *</p>
+                <p class="sublabel-black">
+                  Il convenuto deve aderire al procedimento almeno sette giorni prima dell’incontro fissato. Se entro tale data non dovesse compilare il modulo di adesione puoi partecipare all'incontro telematicamente evitando spostamenti e perdite di tempo
+                </p>
+                <select name="scelta" class="input-large">
+                  <option value="label" selected disabled>Seleziona</option>
+                  <option value="label">1:00h</option>
+                  <option value="label">2:00h</option>
+                  <option value="label">3:00h</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="rows">
+              <p class="label-black">Possiedo un codice sconto per questa mediazione <span class="sublabel-black">(opzionale)</span></p>
+              <div class="buttons d-flex flex-wrap">
+                <input type="text" class="mr-2 mb-2 mb-md-0 input-medium">
+                <div>
+                  <button class="mr-2 button-tax remove">Remuovi</button>
+                  <button class="button-tax verify">Verifica</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="rows mb-0">
+              <p class="label-black">Hai esigenze da comunicare allo staff? <span class="sublabel-black">(opzionale)</span></p>
+              <textarea name="" id="" cols="30" rows="3"></textarea>
+            </div>
+          </form>
+        </div>    
+      </div>
+
+      <div class="buttons-bottom align-self-center">
+        <button class="button-tax button-save mr-2">Salva in bozza</button>
+        <button class="button-tax button-continue">Continua</button>
       </div>
 
     </section>

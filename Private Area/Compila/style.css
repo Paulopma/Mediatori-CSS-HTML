@@ -90,7 +90,7 @@ select:focus {
 }
 
 .line {
-  margin: 40px 0;
+  margin: 60px 0 50px 0;
   border: 0.5px solid #C4C4C4;
 }
 
@@ -173,7 +173,7 @@ main {
 
 #page-container .mid-text {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: bold;
 }
@@ -197,11 +197,18 @@ main {
   font-weight: 600;
 }
 
+#page-container .label-black-big {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 #page-container .sublabel-black {
+  max-width: 530px;
   margin-bottom: 10px;
   color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   font-style: italic;
 }
@@ -227,7 +234,7 @@ main {
 }
 
 #page-container .table {
-  margin-top: 40px;
+  margin-top: 50px;
   width: 100%;
 }
 
@@ -277,12 +284,15 @@ main {
   width: 110px;
 }
 
+#page-container .table .input-full input {
+  width: 100%;
+}
+
 #page-container .table textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   min-width: inherit;
-  height: 100%;
   width: 100% !important;
 }
 
@@ -307,6 +317,13 @@ main {
   outline: none !important;
 }
 
+#page-container .table .characters {
+  float: right;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 #page-container .table-green .table-title {
   background-color: #088155;
 }
@@ -323,6 +340,14 @@ main {
   background-color: transparent;
   color:#088155;
   border: 1.5px solid #088155;
+}
+
+#page-container .table-green .button-tax:hover {
+  background-color: #0881554d;
+}
+
+#page-container .table-green .button-tax:active {
+  background-color: #088155;
 }
 
 #page-container .table-green .button-add {
@@ -371,7 +396,100 @@ main {
   background-color: #CB7000;
 }
 
+#page-container .table-blue .table-title {
+  background-color: #425A8D;
+}
 
+#page-container .table-blue .content {
+  background-color: #DFE7F2;
+}
+
+#page-container .table-blue .input-small {
+  width: 180px;
+}
+
+#page-container .table-blue .input-medium {
+  width: 301px;
+}
+
+#page-container .table-blue .input-large {
+  width: 532px;
+  background-position-x: 96%;
+}
+
+#page-container .table-blue .half-text-area {
+  max-width: 400px;
+  height: 100px;
+}
+
+#page-container .table-blue .column-left {
+  width: 600px;
+}
+
+#page-container .table-blue .buttons .remove {
+  width: 101px;
+  background-color: transparent;
+  color: #BE2F02;
+  border: 1.5px solid #BE2F02
+}
+
+#page-container .table-blue .buttons .remove:hover {
+  background-color: #ff9a7b;
+}
+
+#page-container .table-blue .buttons .remove:active {
+  background-color: #BE2F02;
+}
+
+#page-container .table-blue .buttons .verify {
+  width: 101px;
+  background-color: transparent;
+  color: #088155;
+  border: 1.5px solid #088155
+}
+
+#page-container .table-blue .buttons .verify:hover {
+  background-color: #0881554d;
+}
+
+#page-container .table-blue .buttons .verify:active {
+  background-color: #088155;
+}
+
+#page-container .buttons-bottom .button-save {
+  width: 246px;
+  height: 42px;
+  font-size: 14px;
+  border: 3px solid #088155;
+  color: #088155;
+  border-radius: 5px;
+}
+
+#page-container .buttons-bottom .button-save:hover {
+  background-color: #0881554d;
+}
+
+#page-container .buttons-bottom .button-save:active {
+  background-color: #088155;
+}
+
+#page-container .buttons-bottom .button-continue {
+  width: 246px;
+  height: 42px;
+  font-size: 14px;
+  border: none;
+  background-color: #088155;
+  color: white;
+  border-radius: 5px;
+}
+
+#page-container .buttons-bottom .button-continue:hover {
+  background-color: #065d3d;
+}
+
+#page-container .buttons-bottom .button-continue:active {
+  background-color: #088155;
+}
 
 
 /*media queries-----------------------------*/
@@ -553,6 +671,10 @@ main {
   #page-container .mid-text {
     font-size: 25px;
   }
+
+  #page-container .table-blue .column-left {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -578,5 +700,9 @@ main {
     padding: 30px;
   }
 
+  #page-container .table-blue .input-large {
+    max-width: 301px;
+    background-position-x: 93%;
+  }
 
 }
