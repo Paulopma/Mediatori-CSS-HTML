@@ -2,7 +2,6 @@ html, body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
   background-color: #F9F9F9;
-
 }
 
 p {
@@ -22,6 +21,11 @@ input[type=text] {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: white;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #F1931F;
 }
 
 input[type=checkbox] {
@@ -44,6 +48,11 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: white;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #F1931F;
 }
 
 select {
@@ -460,6 +469,7 @@ main {
   width: 246px;
   height: 42px;
   font-size: 14px;
+  background-color: transparent;
   border: 3px solid #088155;
   color: #088155;
   border-radius: 5px;
@@ -679,6 +689,10 @@ main {
 
 @media (max-width: 575.98px) {
 
+  #page-container {
+    align-items: center !important;
+  }
+
   #page-container .small-menu .search input {
     width: 100%;
   }
@@ -704,5 +718,4 @@ main {
     max-width: 301px;
     background-position-x: 93%;
   }
-
 }
