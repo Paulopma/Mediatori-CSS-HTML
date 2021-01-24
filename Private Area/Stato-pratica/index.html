@@ -170,8 +170,8 @@
 
         <div class="scroll-container"> 
           <div class="navbar d-flex align-items-center">
-            <a href="#"><p class="active">Dettagli</p></a>
-            <a href="#"><p>Stato Pratica</p></a>
+            <a href="#"><p>Dettagli</p></a>
+            <a href="#" class="active"><p>Stato Pratica</p></a>
             <a href="#"><p>Invia Email</p></a>
             <a href="#"><p>Incontri</p></a>
             <a href="#"><p>Allegati</p></a>
@@ -180,186 +180,37 @@
         </div>
   
         <div class="table-container d-flex">
-          <div class="table table-half mb-0">
-            <div class="title d-flex align-items-center">
-              <p class="pl-5">Verifica i 3 costi della mediazione</p>
-            </div>
-  
-            <div class="content d-flex flex-column">
-              <div class="input-large">
-                <p class="text-title">Valore</p>
-                <select name="valore">
-                  <option value="valore1">da Euro 500.001 a Euro 2.500.000</option>
-                  <option value="valore2">da Euro 500.001 a Euro 2.500.000</option>
-                  <option value="valore3">da Euro 500.001 a Euro 2.500.000</option>
-                  <option value="valore4">da Euro 500.001 a Euro 2.500.000</option>
-                </select>
-              </div>
-              <div>
-                <p class="text-title">Tipologia</p>
-                <p class="text-os-medium">Mediazione volontaria</p>
-              </div>
-              <div>
-                <p class="text-title">Prezzi</p>
-                <div class="d-flex flex-wrap">
-                  <div class="d-flex align-items-center mr-5 pr-3">
-                    <input type="radio" name="con-iva" id="">
-                    <p class="text-os-medium ml-2">Con IVA</p>
-                  </div>
-                  <div class="d-flex align-items-center">
-                    <input type="radio" name="con-iva" id="">
-                    <p class="text-os-medium ml-2">Senza IVA</p>
-                  </div>
-                </div>
-              </div>
-              <div class="spending d-flex flex-column">
-                <div class="line m-0 mb-4"></div>
-                <div class="d-flex justify-content-between mb-1">
-                  <p class="text-title mr-4">Costo fisso - Spese di segreteria</p>
-                  <div class="euros d-flex justify-content-between">
-                    <p class="text-title-black mr-2">€</p>
-                    <p class="text-title-black">48.00</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <div class="d-flex">
-                    <p class="text-title mr-1">1.</p>
-                    <p class="text-title mr-4">Partecipazione al primo incontro informativo</p>
-                  </div>
-                  <div class="euros d-flex justify-content-between">
-                    <p class="text-title-black mr-2">€</p>
-                    <p class="text-title-black">0.00</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <div class="d-flex">
-                    <p class="text-title mr-1">2.</p>
-                    <p class="text-title mr-4">Vengono fissati nuovi incontri di mediazione*</p>
-                  </div>
-                  <div class="euros d-flex justify-content-between">
-                    <p class="text-title-black mr-2">€</p>
-                    <p class="text-title-black">49.00</p>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <div class="d-flex">
-                    <p class="text-title mr-1">3.</p>
-                    <p class="text-title mr-4">Vengono fissati nuovi incontri e viene raggiunto un accordo</p>
-                  </div>
-                  <div class="d-flex align-items-start">
-                  <a class="mr-2" href="#"><img class="mb-1" src="Images/icon-question.svg" alt=""></a>
-                    <div class="euros d-flex justify-content-between">
-                      <p class="text-title-black mr-2">€</p>
-                      <p class="text-title-black">20.00</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-between align-self-end">
-                  <div class="total d-flex justify-content-between">
-                    <p class="text-title-black mr-3">Total</p>
-                    <div class="euros d-flex justify-content-between">
-                      <p class="text-total mr-2">€</p>
-                      <p class="text-total">116.00</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="line m-0 mb-2 mt-4"></div>
-                <p class="text-os-small">
-                  * Per questo scaglione si ha diritto ad un solo incontro oltre al primo incontro informativo. Se si desidera fissarne nuovi incontri, l'indennità di partecipazione è € 240,00 oltre iva. 
-                </p>
-              </div>
-              <a href="#" class="link">Versione stampabile <img src="Images/right-arrow.svg" alt="arrow right"></a>
-            </div>
-          </div>
-
-          <div class="table table-half mb-0">
-            <div class="title d-flex align-items-center">
-              <p class="pl-5">Effettua il pagamento</p>
-            </div>
-  
-            <div class="content d-flex flex-column">
-              <p class="text-title">Puoi effettuare un pagamento con bonifico, carta di credito e paypal.</p>
-              <div class="input-large">
-                <p class="text-title">Seleziona chi effettua il pagamento</p>
-                <select name="valore">
-                  <option value="valore1" disabled selected>Select your payment method</option>
-                  <option value="valore2">da Euro 500.001 a Euro 2.500.000</option>
-                  <option value="valore3">da Euro 500.001 a Euro 2.500.000</option>
-                  <option value="valore4">da Euro 500.001 a Euro 2.500.000</option>
-                </select>
-                <p class="text-os-small mt-2">La fattura sarà emessa nei prossimi giorni dallo staff ed inviata via email</p>
-              </div>
-              <div class="input-small">
-                <p class="text-title">Inserisci l’importo che intendi versare</p>
-                <input placeholder="€          116.00" type="text" name="" id="">
-              </div>
-              <div class="input-medium">
-                <p class="text-title">IBAN</p>
-                <input placeholder="XX 00 XXXX 000000 00000000" type="text">
-              </div>
-              <button class="button-next">Prosegui</button>
-            </div>  
-          </div>
-
-          <p class="mid-text align-self-start ml-md-0 mb-0">Pagamenti Concordati</p>
-
+          <p class="mid-text my-0">Stato Pratica</p>
           <div class="scroll-container w-100">
             <div class="table table-big mb-0">
               <div class="title align-items-center">
-                <p class="pl-4">Inserito il</p>
-                <p>Per entrare in mediazione (€) </p>
-                <p>Se raggiungono l’accordio (€)</p>
-                <p>Numero di parti paganti</p>
-                <p>Da pagare entro il </p>
+                <p class="pl-5">First meeting </p>
+                <p>Mediation started</p>
               </div>
     
               <div class="content d-flex flex-column">
                 <div class="rows align-items-center">
-                  <p class="pl-4 text-os-medium">14/07/2020</p>
-                  <div>
-                    <p class="text-os-medium-heavy">€ 183,00</p>
-                    <p class="text-os-medium">(150,00 + 33,00)</p>
-                  </div>
-                  <div>
-                    <p class="text-os-medium-heavy">€ 488,00</p>
-                    <p class="text-os-medium">(400,00 + 88,00)</p>
-                  </div>
-                  <div>
-                    <p class="text-os-medium">Giuseppe Monverde</p>
-                    <p class="text-os-medium">Cosimo Ingrosso</p>
-                    <p class="text-os-medium">Sonio Monverde</p>
-                    <p class="text-os-medium">Alessandro Monverde</p>
-                  </div>
-                  <p class="text-os-medium">14/07/2020</p>
+                  <p class="text-subtitle-green pl-5">14/07/2020</p>
+                  <p class="text-os-medium">18/07/2020</p>
                 </div>
-  
                 <div class="rows align-items-center">
-                  <p class="pl-4 text-os-medium">14/07/2020</p>
-                  <div>
-                    <p class="text-os-medium-heavy">€ 183,00</p>
-                    <p class="text-os-medium">(150,00 + 33,00)</p>
-                  </div>
-                  <div>
-                    <p class="text-os-medium-heavy">€ 488,00</p>
-                    <p class="text-os-medium">(400,00 + 88,00)</p>
-                  </div>
-                  <div>
-                    <p class="text-os-medium">Giuseppe Monverde</p>
-                    <p class="text-os-medium">Cosimo Ingrosso</p>
-                    <p class="text-os-medium">Sonio Monverde</p>
-                    <p class="text-os-medium">Alessandro Monverde</p>
-                  </div>
-                  <p class="text-os-medium">14/07/2020</p>
+                  <p class="text-subtitle-green pl-5">28/08/2020</p>
+                  <p class="text-os-medium">01/09/2020</p>
                 </div>
+                <div class="rows align-items-center">
+                  <p class="text-subtitle-green pl-5">14/07/2020</p>
+                  <p class="text-os-medium">18/07/2020</p>
+                </div>
+                <div class="rows align-items-center">
+                  <p class="text-subtitle-green pl-5">28/08/2020</p>
+                  <p class="text-os-medium">01/09/2020</p>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-
-
-
       </div>
-
     </section>
 
     

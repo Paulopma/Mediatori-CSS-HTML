@@ -17,11 +17,26 @@ input[type=text] {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   border: 1px solid #C4C4C4;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   background: white;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #F1931F;
+}
+
+input[type=checkbox] {
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  padding: 10px;
+  margin: 5px;
 }
 
 select {
@@ -43,6 +58,23 @@ select {
 }
 
 select:focus {
+  outline: none !important;
+  border: 1px solid #F1931F;
+}
+
+textarea {
+  color: #3d3d3d;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: white;
+}
+
+textarea:focus {
   outline: none !important;
   border: 1px solid #F1931F;
 }
@@ -187,163 +219,61 @@ main {
 #page-container .table-container {
   width: 1086px;
   flex-wrap: wrap;
-  padding: 40px 18px 56px 18px;
+  padding: 50px;
   background-color: white;
   gap: 25px;
+}
+
+#page-container .table-container .text-subtitle-green {
+  font-family: "Open Sans", sans-serif;
+  color: #088155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#page-container .table-container .text-os-medium {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#page-container .table-container .table {
+  width: 663px;
 }
 
 #page-container .table-container .table .title {
   height: 57px;
   width: 100%;
   background-color: #088155;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: 330px 330px;
 }
 
 #page-container .table-container .table .title p {
   color: white;
   font-weight: bold;
-  font-size: 18px;
-}
-
-#page-container .table-container .table .content {
-  display: grid;
-  column-gap: 32px;
-  padding: 44px 40px;
-  background-color: #F9F9F9;
-}
-
-#page-container .table-container .table .content .link {
-  font-size: 16px;
-  font-weight: 700;
-  color: #F1931F;
-}
-
-#page-container .table-container .table .content .text-title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-#page-container .table-container .table .content .text-title-black {
   font-size: 14px;
   font-weight: 700;
-  color: black;
+  padding: 0 20px;
 }
 
-#page-container .table-container .table .content .spending .euros {
-  min-width: 65px;
-}
-
-#page-container .table-container .table .content .spending .total {
-  float: right;
-  min-width: 150px;
-}
-
-#page-container .table-container .table .content .spending .text-total {
-  font-size: 14px;
-  font-weight: 800;
-  color: black;
-}
-
-#page-container .table-container .table .content .text-os-medium {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-#page-container .table-container .table .content .text-os-medium-heavy {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-#page-container .table-container .table .content .text-os-small {
-  font-family: "Open Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-}
-
-#page-container .table-container .table .content .input-large select,
-#page-container .table-container .table .content .input-large input {
-  width: 335px;
-  background-position-x: 95%;
-}
-
-#page-container .table-container .table .content .input-medium select,
-#page-container .table-container .table .content .input-medium input {
-  width: 250px;
-}
-
-#page-container .table-container .table .content .input-small select,
-#page-container .table-container .table .content .input-small input {
-  width: 130px;
-}
-
-#page-container .table-container .table-half {
-  width: 510px;
-}
-
-#page-container .table-container .table-half .content {
-  width: 100%;
-  grid-template-columns: 50% 45%;
-  min-height: 684px;
-  row-gap: 35px;
-}
-
-#page-container .table-container .table .content .button-next {
-  width: 143px;
-  height: 42px;
-  font-size: 14px;
-  border: none;
-  font-weight: 700;
-  color: white;
-  background-color: #088155;
-  border-radius: 5px;
-}
-
-#page-container .table-container .table-big {
-  width: 1050px;
-}
-
-#page-container .table-container .table-big .title {
-  margin-bottom: 4px;
-}
-
-#page-container .table-container .table-big .title {
-  height: 59px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 210px);
-}
-
-#page-container .table-container .table-big .title p {
-  font-size: 14px;
-  font-weight: 700;
-  padding: 0 30px;
-}
-
-#page-container .table-container .table-big .content {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-}
-
-#page-container .table-container .table-big .rows {
+#page-container .table-container .table .rows {
   background-color: #F9F9F9;
   margin-bottom: 4px;
   display: grid;
-  grid-template-columns: repeat(5, 210px);
-  min-height: 130px;
+  grid-template-columns: 330px 330px;
+  min-height: 84px;
 }
 
-#page-container .table-container .table-big .rows:hover {
+#page-container .table-container .table .rows:hover {
   background-color: #FFF3E1;
 }
 
 #page-container .table-container .table-big .rows p {
-  padding: 0 30px;
+  padding: 0 20px;
 }
-
 
 /*media queries-----------------------------*/
 
@@ -372,10 +302,6 @@ main {
     flex-direction: column;
     align-items: center;
   }
-
-  #page-container .table-container .table-half .content {
-    min-height: fit-content;
-  }
 } 
 
 @media (max-width: 1199.98px) {
@@ -395,6 +321,10 @@ main {
 
   #page-container .page .username p {
     width: 100px;
+  }
+
+  #page-container .table-container {
+    padding: 20px;
   }
 } 
 
@@ -525,8 +455,13 @@ main {
 
   #page-container .table-container {
     width: 100%;
-    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 40px;
     margin: 0;
+  }
+
+  #page-container .table-container .email-container {
+    padding: 20px;
   }
 
   #page-container .table-container .table .content {
@@ -558,36 +493,12 @@ main {
 
   #page-container .table-container {
     align-items: flex-start;
-  }
-  
-  #page-container .table-container .table .title {
-    padding-left: 30px !important;
-    border-radius: 0;
-  }
-  
-  #page-container .table-container .table .title p {
-    padding-left: 10px !important;
-    font-size: 16px;
-  }
-  
-  #page-container .table-container .table .content .input-large select,
-  #page-container .table-container .table .content .input-large input {
-    width: 315px;
-    background-position-x: 95%;
-  }
-  
-  #page-container .table-container .table-half {
-    width: 100%;
-  }
-
-  #page-container .table-container .table-half .content {
-    width: 100%;
-    padding: 20px;
-  }
-
-  #page-container .table-container .table-big {
     padding: 0;
-    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 100px;
   }
-  
+
+  #page-container .table-container .table {
+    margin-left: 15px;
+  }
 }

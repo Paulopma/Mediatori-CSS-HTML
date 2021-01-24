@@ -534,6 +534,10 @@ main {
     margin: 0;
   }
 
+  #page-container .table-container .table-big {
+    margin-left: 15px;
+  }
+
   #page-container .table-container .table .content {
     padding: 20px 40px;
   }
@@ -583,10 +587,6 @@ main {
   #page-container .table-container .table-half .title p {
     padding-left: 0 !important;
     font-size: 16px;
-  }
-  
-  #page-container .table-container .table-big .title {
-    border-radius: 0;
   }
   
 }
