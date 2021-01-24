@@ -24,6 +24,11 @@ input[type=text] {
   background: white;
 }
 
+input:focus {
+  outline: none !important;
+  border: 1px solid #F1931F;
+}
+
 select {
   width: 325px;
   height: 42px;
@@ -555,20 +560,6 @@ main {
   #page-container .small-menu .menu .menus {
     width: 100%;
   }
-
-  #page-container .table-container {
-    align-items: flex-start;
-  }
-  
-  #page-container .table-container .table .title {
-    padding-left: 30px !important;
-    border-radius: 0;
-  }
-  
-  #page-container .table-container .table .title p {
-    padding-left: 10px !important;
-    font-size: 16px;
-  }
   
   #page-container .table-container .table .content .input-large select,
   #page-container .table-container .table .content .input-large input {
@@ -576,18 +567,26 @@ main {
     background-position-x: 95%;
   }
   
+  #page-container .table-container .table-half .title {
+    padding-left: 30px !important;
+    border-radius: 0;
+  }
+  
   #page-container .table-container .table-half {
     width: 100%;
   }
-
+  
   #page-container .table-container .table-half .content {
-    width: 100%;
-    padding: 20px;
+    padding: 30px;
   }
 
-  #page-container .table-container .table-big {
-    padding: 0;
-    margin: 0;
+  #page-container .table-container .table-half .title p {
+    padding-left: 0 !important;
+    font-size: 16px;
+  }
+  
+  #page-container .table-container .table-big .title {
+    border-radius: 0;
   }
   
 }
